@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>619306025092-s79sc605v526tk8unfc2mba10qtadb88.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.619306025092-s79sc605v526tk8unfc2mba10qtadb88</string>
+	<key>API_KEY</key>
+	<string>AIzaSyATpUfR-ZIodFCnDBQpTcLDa9pYyIq668M</string>
+	<key>GCM_SENDER_ID</key>
+	<string>619306025092</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.pwc.event</string>
+	<key>PROJECT_ID</key>
+	<string>pwc-event-fd132</string>
+	<key>STORAGE_BUCKET</key>
+	<string>pwc-event-fd132.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:619306025092:ios:52552d79a870d640</string>
+	<key>DATABASE_URL</key>
+	<string>https://pwc-event-fd132.firebaseio.com</string>
+</dict>
+</plist>

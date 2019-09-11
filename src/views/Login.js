@@ -103,7 +103,7 @@ class Login extends Component {
                     <Input
                       keyboardType="email-address"
                       placeholderTextColor={"gray"}
-                      InputStyle={[Theme.shadow,styles.inputs]}
+                      InputStyle={[Theme.shadow,styles.inputs, {elevation: 1}]}
                       onChangeText={handleChange("email")}
                       value={values.email}
                       name="email"
@@ -121,7 +121,7 @@ class Login extends Component {
                     <Input
                       //onEndEditing={handleSubmit}
                       returnKeyType="go"
-                      InputStyle={[Theme.shadow,styles.inputs]}
+                      InputStyle={[Theme.shadow,styles.inputs, {elevation: 1}]}
                       onChangeText={handleChange("password")}
                       placeholderTextColor={"gray"}
                       secureTextEntry={true}

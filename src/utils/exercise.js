@@ -15,4 +15,9 @@ export const exercise = [
         type: "Calves",
         image: require('../assets/exercise/Calves/SeatedCalfRaise.jpg')
     }
+    ,
+    {
+        type: "Chest",
+        image: require('../assets/exercise/Chest/Butterfly.jpg')
+    }
 ]

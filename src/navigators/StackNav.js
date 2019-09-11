@@ -2,11 +2,11 @@ import { createStackNavigator, createAppContainer } from 'react-navigation';
 import HomeScreen from "../views/HomeScreen";
 import LoadingScreen from '../views/SplashScreen'
 import LoginScreen from '../views/Login'
-
+import { TabNavContainer } from "./TabNavigator";
 
 const StackNav = createStackNavigator({
     Home:{
-        screen: HomeScreen
+        screen: TabNavContainer
     }
 },{
     defaultNavigationOptions:{
@@ -22,7 +22,8 @@ const AuthNav = createStackNavigator({
     },
     Login:{
         screen: LoginScreen
-    }
+    },
+    
 
 },{
     defaultNavigationOptions:{

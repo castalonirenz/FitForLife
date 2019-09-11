@@ -51,7 +51,7 @@ class Login extends Component {
   }
 
   componentDidMount() {
-    this.props.navigation.navigate('LoginSuccess')
+    // this.props.navigation.navigate('LoginSuccess')
     // this.props.KeepSignedIn.remember ? this.props.onLogin(this.props.KeepSignedIn.credentials, this.props.KeepSignedIn.remember, DeviceInfo) : null
   }
 
@@ -70,7 +70,6 @@ class Login extends Component {
     // }
     return (
       <SafeAreaView style={{ flex: 1, backgroundColor: "#fff" }}>
-        <Text>Template</Text>
         {/* <OfflineContainer /> */}
         <Image source={require('../assets/icon/logo.jpg')} resizeMode="contain" style={{ height: RFPercentage(7.0), width: RFPercentage(7), alignSelf: "flex-end", marginRight: 20, marginTop: 10 }} />
         <ScrollView style={{ width: "100%" }} contentContainerStyle={{ flexGrow: 1 }}>
@@ -104,7 +103,7 @@ class Login extends Component {
                     <Input
                       keyboardType="email-address"
                       placeholderTextColor={"gray"}
-                      InputStyle={[styles.inputs]}
+                      InputStyle={[Theme.shadow,styles.inputs]}
                       onChangeText={handleChange("email")}
                       value={values.email}
                       name="email"
@@ -122,7 +121,7 @@ class Login extends Component {
                     <Input
                       //onEndEditing={handleSubmit}
                       returnKeyType="go"
-                      InputStyle={[styles.inputs]}
+                      InputStyle={[Theme.shadow,styles.inputs]}
                       onChangeText={handleChange("password")}
                       placeholderTextColor={"gray"}
                       secureTextEntry={true}
@@ -137,30 +136,21 @@ class Login extends Component {
                     </Text>
                   </View>
 
-                  <View style={{ flexDirection: "row", alignItems: "center", padding: 10 }}>
-                    <CheckBox checked={this.state.remember} color="#FFB600" onPress={() => this.setState({ remember: !this.state.remember ? true : false })} />
-                    <Text style={[Theme.NormalText, { marginLeft: 15 }]}>Keep me signed in</Text>
-                  </View>
-
-
 
                   {/* {loadingIndicator} */}
 
                   <View style={{ flexDirection: "row", width: "100%", justifyContent: "center", marginTop: 30 }}>
                     <View style={{ width: "45%", marginRight: 20 }}>
-                      <Touchable TouchablePress={handleSubmit}
+                      <Touchable 
+                        TouchableStyle={{borderRadius: 5}}
+                        // TouchablePress={handleSubmit}
+                          TouchablePress={()=>this.props.navigation.navigate('Home')}
                         TextStyle={{ fontSize: RFPercentage(2.0) }}>
                         Login
                      </Touchable>
                     </View>
 
-                    <View style={{ width: "45%", alignItems: "center" }}>
-                      <Touchable TouchablePress={() => this.props.navigation.navigate('Register')}
-                        TouchableStyle={{ backgroundColor: "#000" }}
-                        TextStyle={{ fontSize: RFPercentage(2.0) }}>
-                        Register
-                    </Touchable>
-                    </View>
+                  
                   </View>
 
 

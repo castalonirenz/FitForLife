@@ -1,4 +1,4 @@
-
+import Header from './Header';
 export {Touchable} from "../components/Button";
 export { Input} from "../components/Input";
 export {Card} from '../components/Card'
@@ -11,6 +11,7 @@ export  {Picker} from './picker'
 export {ModalPass} from './Modal'
 export {LoadingModal} from './Modal'
 export {MoreModal} from './Modal'
+export const HeaderComponent = Header
 
 
 

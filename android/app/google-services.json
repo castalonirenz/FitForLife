@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "33468745949",
+    "firebase_url": "https://fitforlife-d0292.firebaseio.com",
+    "project_id": "fitforlife-d0292",
+    "storage_bucket": "fitforlife-d0292.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:33468745949:android:d9c67237c33baf3cf1f334",
+        "android_client_info": {
+          "package_name": "com.fitforlife"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "33468745949-chuvjquo94ngtssghv1b99d4e3m7odd8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBw5Z0xX8KAABfeYPIvle5O6OdDbtmxr1c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "33468745949-chuvjquo94ngtssghv1b99d4e3m7odd8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

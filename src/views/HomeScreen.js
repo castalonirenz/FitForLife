@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import { View, Text, SafeAreaView, ScrollView, TouchableOpacity, Image, Dimensions } from 'react-native';
 import firebase from 'react-native-firebase';
-import {HeaderComponent, Exercise} from '../components/index'
+import { HeaderComponent, Exercise } from '../components/index'
 import { Theme } from '../themes/Theme';
-const {width} = Dimensions.get('screen')
+import { addNewExercise } from "../redux/actions/AddToExercise";
+import { connect } from "react-redux";
+import { exercise } from "../utils/exercise";
+const { width } = Dimensions.get('screen')
 class HomeScreen extends Component {
   constructor(props) {
     super(props);
@@ -11,118 +14,84 @@ class HomeScreen extends Component {
     };
   }
 
-  componentDidMount() {
-    this._getToken()
-    this._getPermission()
-    this.createNotificationListeners();
-  }
-
-  async createNotificationListeners() {
-    /*
-    * Triggered when a particular notification has been received in foreground
-    * */
-    this.notificationListener = firebase.notifications().onNotification((notification) => {
-      const { title, body, data } = notification;
-      this.showAlert(title, body, data, "foreground");
-    });
-
-    /*
-    * If your app is in background, you can listen for when a notification is clicked / tapped / opened as follows:
-    * */
-    this.notificationOpenedListener = firebase.notifications().onNotificationOpened((notificationOpen) => {
-      const { title, body } = notificationOpen.notification;
-      this.showAlert(title, body, data);
-    });
-
-    /*
-    * If your app is closed, you can check if it was opened by a notification being clicked / tapped / opened as follows:
-    * */
-    const notificationOpen = await firebase.notifications().getInitialNotification();
-    if (notificationOpen) {
-      const { title, body, data } = notificationOpen.notification;
-      console.log(title, body, data, "notification open")
-      this.showAlert(title, body, data);
-    }
-    /*
-    * Triggered for data only payload in foreground
-    * */
-    this.messageListener = firebase.messaging().onMessage((message) => {
-      //process data message
-      console.log(JSON.stringify(message));
-    });
-  }
-
-  showAlert(title, body, data) {
-    console.log(title, body, data, "this is me")
-    Alert.alert(
-      title, body,
-      [
-        { text: 'OK', onPress: () => console.log('OK Pressed') },
-      ],
-      { cancelable: false },
-    );
-  }
-
-
-
-  _getPermission = async () => {
-    const enabled = await firebase.messaging().hasPermission();
-    if (enabled) {
-      // user has permissions
-      console.log('have permission')
-    } else {
-      // user doesn't have permission
-      console.log('dont have permission')
-      try {
-        await firebase.messaging().requestPermission();
-        // User has authorised
-      } catch (error) {
-        // User has rejected permissions
-      }
-    }
-  }
-
-  _getToken = async () => {
-    const fcmToken = await firebase.messaging().getToken();
-    if (fcmToken) {
-      // alert(fcmToken)
-      console.log(fcmToken, "device Token")
-    } else {
-      console.log("failed")
-    }
+  componentWillMount() {
+    console.log(this.props.ExerciseList, "list of added exercise")
   }
 
   _selectedExercise = (data) => {
-    this.props.navigation.navigate('Exercise',{
+    this.props.navigation.navigate('Exercise', {
       list: data
     })
   }
 
+  _viewSavedExercise = (data) => {
+    console.log(data)
+  }
+
   render() {
     return (
-      <SafeAreaView style={{flex: 1}}>
-       <HeaderComponent 
-        headerText="FIT FOR LIFE"
+      <SafeAreaView style={{ flex: 1 ,width:"100%"}}>
+        <HeaderComponent
+          headerText="FIT FOR LIFE"
         />
-      <ScrollView showsVerticalScrollIndicator={false}>
-        <View style={{flex: 1}}>
+        <ScrollView
+          showsVerticalScrollIndicator={false}
+        >
+          <View style={{ flex: 1 , width: "100%",}}>
             <ScrollView
               snapToInterval={width}
               decelerationRate="fast"
               snapToAlignment={'center'}
               showsHorizontalScrollIndicator={false}
               horizontal={true}>
-                <Exercise exerciseSelected={this._selectedExercise} />
-           
+
+           <View style={{padding: 20}}>
+            <Text style={Theme.HeaderText}>Available exercise in the gym</Text>
+                <Exercise
+                  parentStyle={{ flexDirection: 'row', backgrondColor: "red" }}
+                  exercise={exercise}
+                  exerciseSelected={this._selectedExercise} />
+           </View>
+
             </ScrollView>
-            <View style={{flex: 1}}>
-              <Text>Renz</Text>
-            </View>
-        </View>
-      </ScrollView>
+
+
+            {this.props.ExerciseList !== null ?
+              <View style={{alignSelf:"center", width: "100%",}}>
+                <Text style={Theme.HeaderText}>Your Saved Exercise</Text>
+                <Exercise
+                  parentStyle={{ flexDirection: 'column', backgrondColor: "red" }}
+                  exercise={this.props.ExerciseList}
+                  exerciseSelected={this._viewSavedExercise} />
+              </View>
+              :
+             <View style={{alignSelf:"center"}}>
+                <Text style={Theme.HeaderText}>Your saved exercise will show here</Text>
+              </View>
+            }
+
+
+
+
+
+          </View>
+
+        </ScrollView>
       </SafeAreaView>
     );
   }
 }
 
-export default HomeScreen;
+const mapStateToProps = state => {
+  return {
+    ExerciseList: state.ExerciseList.exercise
+  }
+}
+
+const mapDispatchToProps = dispatch => {
+  return {
+    AddExercise: (val) => dispatch(addNewExercise(val))
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(HomeScreen);

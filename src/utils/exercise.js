@@ -260,7 +260,7 @@ export const exercise = [
         data: [
             {
                 name: "Dumbbell Alt. Biceps Curl",
-                image: null,
+                image: require('../assets/exercise/Biceps/AlternateInclineDumbbellCurl.jpg'),
                 procedure: [
                            "1.	Stand (torso upright) with a dumbbell in each hand held at arm’s length. The elbows should be close to the torso and the palms of your hand should be facing your thighs.",
                            "2.	While holding the upper arm stationary, curl the right weight as you rotate the palm of the hands until they are facing forward. At this point continue contracting the biceps as you breathe out until your biceps is fully contracted and the dumbbells are at shoulder level. Hold the contracted position for a second as you squeeze the biceps. Tip: Only the forearms should move.",
@@ -272,7 +272,7 @@ export const exercise = [
             },
             {
                 name: "Alternate Incline Dumbbell Curl",
-                image: null,
+                image: require('../assets/exercise/Biceps/AlternateInclineDumbbellCurl.jpg'),
                 procedure: [
                            "1.	Sit down on an incline bench with a dumbbell in each hand being held at arm’s length. Tip: Keep the elbows close to the torso. This will be your starting position.",
                            "2.	While holding the upper arm stationary, curl the right weight forward while contracting the biceps as you breathe out. As you do so, rotate the hand so that the palm is facing up. Continue the movement until your biceps is fully contracted and the dumbbells are at shoulder level. Hold the contracted position for a second as you squeeze the biceps. Tip: Only the forearms should move.",
@@ -283,7 +283,7 @@ export const exercise = [
             },
             {
                 name: "Concentration Curls",
-                image: null,
+                image: require('../assets/exercise/Biceps/ConcentrationCurls.jpg'),
                 procedure: [
                            "1.	Sit down on a flat bench with one dumbbell in front of you between your legs. Your legs should be spread with your knees bent and feet on the floor.",
                            "2.	Use your right arm to pick the dumbbell up. Place the back of your right upper arm on the top of your inner right thigh. Rotate the palm of your hand until it is facing forward away from your thigh. Tip: Your arm should be extended and the dumbbell should be above the floor. This will be your starting position.",
@@ -295,7 +295,7 @@ export const exercise = [
             },
             {
                 name: "Wide Grip Barbell Curl",
-                image: null,
+                image: require('../assets/exercise/Biceps/WideGripBarbellCurl.jpg'),
                 procedure: [
                            "1.	Stand up with your torso upright while holding a barbell at the wide outer handle. The palm of your hands should be facing forward. The elbows should be close to the torso. This will be your starting position.",
                            "2.	While holding the upper arms stationary, curl the weights forward while contracting the biceps as you breathe out. Tip: Only the forearms should move.",
@@ -307,7 +307,7 @@ export const exercise = [
             },
             {
                 name: "Close Grip Barbell Curl",
-                image: null,
+                image: require('../assets/exercise/Biceps/CloseGripBarbellCurl.jpg'),
                 procedure: [
                            "1.	Hold a barbell with both hands, palms up and a few inches apart.",
                            "2.	Stand with your torso straight and your head up. Your feet should be about shoulder width and your elbows close to your torso. This will be your starting position. Tip: You will keep your upper arms and elbows stationary throughout the movement.",
@@ -319,7 +319,7 @@ export const exercise = [
             },
             {
                 name: "EZ Bar Curl",
-                image: null,
+                image: require('../assets/exercise/Biceps/EZBarCurl.jpg'),
                 procedure: [
                           "1.	Stand up straight while holding an EZ curl bar at the wide outer handle. The palms of your hands should be facing forward and slightly tilted inward due to the shape of the bar. Keep your elbows close to your torso. This will be your starting position.",
                           "2.	Now, while keeping your upper arms stationary, exhale and curl the weights forward while contracting the biceps. Focus on only moving your forearms.",
@@ -332,7 +332,7 @@ export const exercise = [
             },
             {
                 name: "Biceps Cable Curl",
-                image: null,
+                image: require('../assets/exercise/Biceps/BicepsCableCurl.jpg'),
                 procedure: [
                            "1.	Stand up with your torso upright while holding a cable curl bar that is attached to a low pulley. Grab the cable bar at shoulder width and keep the elbows close to the torso. The palm of your hands should be facing up (supinated grip). This will be your starting position.",
                            "2.	While holding the upper arms stationary, curl the weights while contracting the biceps as you breathe out. Only the forearms should move. Continue the movement until your biceps are fully contracted and the bar is at shoulder level. Hold the contracted position for a second as you squeeze the muscle.",
@@ -344,7 +344,7 @@ export const exercise = [
             },
             {
                 name: "One Arm Cable Curl",
-                image: null,
+                image: require('../assets/exercise/Biceps/OneArmCableCurl.jpg'),
                 procedure: [
                            "1.	Start out by grabbing single handle next to the low pulley machine. Make sure you are far enough from the machine so that your arm is supporting the weight.",
                            "2.	Make sure that your upper arm is stationary, perpendicular to the floor with elbows in and palms facing forward. Your non lifting arm should be grabbing your waist. This will allow you to keep your balance.",
@@ -357,7 +357,7 @@ export const exercise = [
             },
             {
                 name: "Cable Hammer Curls Rope",
-                image: null,
+                image: require('../assets/exercise/Biceps/CableHammerCurlsRope.jpg'),
                 procedure: [
                            "1.	Attach a rope attachment to a low pulley and stand facing the machine about 12 inches away from it.",
                            "2.	Grasp the rope with a neutral (palms-in) grip and stand straight up keeping the natural arch of the back and your torso stationary.",
@@ -371,7 +371,7 @@ export const exercise = [
             },
             {
                 name: "Overhead Cable Curl",
-                image: null,
+                image: require('../assets/exercise/Biceps/OverheadCableCurl.jpg'),
                 procedure: [
                           "1.	To begin, set a weight that is comfortable on each side of the pulley machine. Note: Make sure that the amount of weight selected is the same on each side.",
                           "2.	Now adjust the height of the pulleys on each side and make sure that they are positioned at a height higher than that of your shoulders.",
@@ -385,7 +385,7 @@ export const exercise = [
             },
             {
                 name: "Preacher Curl",
-                image: null,
+                image: require('../assets/exercise/Biceps/PreacherCurl.jpg'),
                 procedure: [
                           "1.	To perform this movement you will need a preacher bench and an E-Z bar. Grab the E-Z curl bar at the close inner handle (either have someone hand you the bar which is preferable or grab the bar from the front bar rest provided by most preacher benches). The palm of your hands should be facing forward and they should be slightly tilted inwards due to the shape of the bar.",
                           "2.	With the upper arms positioned against the preacher bench pad and the chest against it, hold the E-Z Curl Bar at shoulder length. This will be your starting position.",
@@ -404,7 +404,7 @@ export const exercise = [
         data: [
             {
                 name: "Seated Calf Raise",
-                image: null,
+                image: require('../assets/exercise/Calves/SeatedCalfRaise.jpg'),
                 procedure: [
                            "1.	Sit on the machine and place your toes on the lower portion of the platform provided with the heels extending off. Choose the toe positioning of your choice (forward, in, or out) as per the beginning of this chapter.",
                            "2.	Place your lower thighs under the lever pad, which will need to be adjusted according to the height of your thighs. Now place your hands on top of the lever pad in order to prevent it from slipping forward.",
@@ -417,7 +417,7 @@ export const exercise = [
             },
             {
                 name: "Calf Press Leg Press Machine",
-                image: null,
+                image: require('../assets/exercise/Calves/CalfPressLegPressMachine.jpg'),
                 procedure: [
                            "1.	Using a leg press machine, sit down on the machine and place your legs on the platform directly in front of you at a medium (shoulder width) foot stance.",
                            "2.	Lower the safety bars holding the weighted platform in place and press the platform all the way up until your legs are fully extended in front of you without locking your knees. (Note: In some leg press units you can leave the safety bars on for increased safety. If your leg press unit allows for this, then this is the preferred method of performing the exercise.) Your torso and the legs should make perfect 90-degree angle. Now carefully place your toes and balls of your feet on the lower portion of the platform with the heels extending off. Toes should be facing forward, outwards or inwards as described at the beginning of the chapter. This will be your starting position.",
@@ -438,7 +438,7 @@ export const exercise = [
         data: [
             {
                 name: "Incline Dumbbell Flyes",
-                image: null,
+                image: require('../assets/exercise/Chest/InclineDumbbellFly.jpg'),
                 procedure: [
                            "1.	Hold a dumbbell on each hand and lie on an incline bench that is set to an incline angle of no more than 30 degrees.",
                            "2.	Extend your arms above you with a slight bend at the elbows.",
@@ -452,7 +452,7 @@ export const exercise = [
             },
             {
                 name: "Butterfly",
-                image: null,
+                image: require('../assets/exercise/Chest/InclineDumbbellFly.jpg'),
                 procedure: [
                            "1.	Sit on the machine with your back flat on the pad.",
                            "2.	Take hold of the handles. Tip: Your upper arms should be positioned parallel to the floor; adjust the machine accordingly. This will be your starting position.",
@@ -465,7 +465,7 @@ export const exercise = [
             },
             {
                 name: "Cable Crossover",
-                image: null,
+                image: require('../assets/exercise/Chest/CableCrossover.jpg'),
                 procedure: [
                            "1.	To get yourself into the starting position, place the pulleys on a high position (above your head), select the resistance to be used and hold the pulleys in each hand.",
                            "2.	Step forward in front of an imaginary straight line between both pulleys while pulling your arms together in front of you. Your torso should have a small forward bend from the waist. This will be your starting position.",
@@ -478,7 +478,7 @@ export const exercise = [
             },
             {
                 name: "Chest Dips",
-                image: null,
+                image: require('../assets/exercise/Chest/ChestDips.jpg'),
                 procedure: [
                            "1.	For this exercise you will need access to parallel bars. To get yourself into the starting position, hold your body at arm’s length (arms locked) above the bars.",
                            "2.	While breathing in, lower yourself slowly with your torso leaning forward around 30 degrees or so and your elbows flared out slightly until you feel a slight stretch in the chest.",
@@ -489,7 +489,7 @@ export const exercise = [
             },
             {
                 name: "Barbell Bench Press",
-                image: null,
+                image: require('../assets/exercise/Chest/BarbellBenchPress.jpg'),
                 procedure: [
                           "1.	Lie back on a flat bench. Using a medium width grip (a grip that creates a 90-degree angle in the middle of the movement between the forearms and the upper arms), lift the bar from the rack and hold it straight over you with your arms locked. This will be your starting position.",
                           "2.	From the starting position, breathe in and begin coming down slowly until the bar touches your middle chest.",
@@ -502,7 +502,7 @@ export const exercise = [
             },
             {
                 name: "Barbell Incline Bench Press",
-                image: null,
+                image: require('../assets/exercise/Chest/BarbellInclineBenchPress.jpg'),
                 procedure: [
                            "1.	Load the bar to an appropriate weight for your training.",
                            "2.	Lay on the bench with your feet flat on the ground, driving through to your hips. Your back should be arched, and your shoulder blades retracted.",
@@ -514,7 +514,7 @@ export const exercise = [
             },
             {
                 name: "Barbell Decline Bench Press",
-                image: null,
+                image: require('../assets/exercise/Chest/BarbellDeclineBenchPress.jpg'),
                 procedure: [
                            "1.	Secure your legs at the end of the decline bench and slowly lay down on the bench.",
                            "2.	Using a medium width grip (a grip that creates a 90-degree angle in the middle of the movement between the forearms and the upper arms), lift the bar from the rack and hold it straight over you with your arms locked. The arms should be perpendicular to the floor. This will be your starting position. Tip: In order to protect your rotator cuff, it is best if you have a spotter help you lift the barbell off the rack.",
@@ -529,7 +529,7 @@ export const exercise = [
             },
             {
                 name: "Dumbbell Bench Press",
-                image: null,
+                image: require('../assets/exercise/Chest/DumbbellBenchPress.jpg'),
                 procedure: [
                            "1.	Lie down on a flat bench with a dumbbell in each hand resting on top of your thighs. The palms of your hands will be facing each other.",
                            "2.	Then, using your thighs to help raise the dumbbells up, lift the dumbbells one at a time so that you can hold them in front of you at shoulder width.",
@@ -543,7 +543,7 @@ export const exercise = [
             },
             {
                 name: "Barbell Pullover",
-                image: null,
+                image: require('../assets/exercise/Chest/BarbellPullover.jpg'),
                 procedure: [
                            "1.	Lie on a flat bench with a barbell using a shoulder grip width.",
                            "2.	Hold the bar straight over your chest with a bend in your arms. This will be your starting position.",
@@ -562,7 +562,7 @@ export const exercise = [
         data: [
             {
                 name: "Standing Leg Curl",
-                image: null,
+                image: require('../assets/exercise/Harmstring/StandingLegCurl.jpg'),
                 procedure: [
                            "1.	Adjust the machine lever to fit your height and lie with your torso bent at the waist facing forward around 30-45 degrees (since an angled position is more favorable for hamstrings recruitment) with the pad of the lever on the back of your right leg (just a few inches under the calves) and the front of the right leg on top of the machine pad.",
                            "2.	Keeping the torso bent forward, ensure your leg is fully stretched and grab the side handles of the machine. Position your toes straight. This will be your starting position.",
@@ -574,7 +574,7 @@ export const exercise = [
             },
             {
                 name: "Lying Leg Curl",
-                image: null,
+                image: require('../assets/exercise/Harmstring/LyingLegCurl.jpg'),
                 procedure: [
                            "1.	Adjust the machine lever to fit your height and lie face down on the leg curl machine with the pad of the lever on the back of your legs (just a few inches under the calves). Tip: Preferably use a leg curl machine that is angled as opposed to flat since an angled position is more favorable for hamstrings recruitment.",
                            "2.	Keeping the torso flat on the bench, ensure your legs are fully stretched and grab the side handles of the machine. Position your toes straight (or you can also use any of the other two stances described on the foot positioning section). This will be your starting position.",
@@ -587,7 +587,7 @@ export const exercise = [
             },
             {
                 name: "Romanian Deadlift",
-                image: null,
+                image: require('../assets/exercise/Harmstring/RomanianDeadlift.jpg'),
                 procedure: [
                            "1.	Hold a bar at hip level with a pronated (palms facing down) grip. Your shoulders should be back, you’re back arched, and your knees slightly bent. This will be your starting position.",
                            "2.	Lower the bar by moving your butt back as far as you can. Keep the bar close to your body, your head looking forward, and your shoulders back. Done correctly, you should reach the maximum range of your hamstring flexibility just below the knee. Any further movement will be compensation and should be avoided for this movement.",
@@ -603,7 +603,7 @@ export const exercise = [
         data: [
             {
                 name: "Encogimientos Oblicuos Fitball",
-                image: null,
+                image: require('../assets/exercise/Oblique/EncogimientosOblicuosFitball.jpg'),
                 procedure: [
                            "1.	Start out by lying on your right side with your legs lying on top of each other. Make sure your knees are bent a little bit.",
                            "2.	Place your left hand behind your head.",
@@ -616,7 +616,7 @@ export const exercise = [
             },
             {
                 name: "Dumbbell Side Bend",
-                image: null,
+                image: require('../assets/exercise/Oblique/DumbbellSideBend.jpg'),
                 procedure: [
                            "1.	Stand up straight while holding a dumbbell on the left hand (palms facing the torso) as you have the right hand holding your waist. Your feet should be placed at shoulder width. This will be your starting position.",
                            "2.	While keeping your back straight and your head up, bend only at the waist to the right as far as possible. Breathe in as you bend to the side. Then hold for a second and come back up to the starting position as you exhale. Tip: Keep the rest of the body stationary.",
@@ -629,7 +629,7 @@ export const exercise = [
             },
             {
                 name: "Side Briidge",
-                image: null,
+                image: require('../assets/exercise/Oblique/SideBridge.png'),
                 procedure: [
                           "Works your obliques and helps stabilize your spine. Lie on your side and support your body between your forearm and knee to your feet. Hold position for two to four seconds.",
                           "Repeat on the other side. Build up to at least 60 seconds on each side of your body!",
@@ -644,7 +644,7 @@ export const exercise = [
         data: [
             {
                 name: "Leg Extensions",
-                image: null,
+                image: require('../assets/exercise/Quadriceps/LegExtensions.jpg'),
                 procedure: [
                            "1.	For this exercise you will need to use a leg extension machine. First choose your weight and sit on the machine with your legs under the pad (feet pointed forward) and the hands holding the side bars. This will be your starting position. Tip: You will need to adjust the pad so that it falls on top of your lower leg (just above your feet). Also, make sure that your legs form a 90-degree angle between the lower and upper leg. If the angle is less than 90-degrees then that means the knee is over the toes which in turn creates undue stress at the knee joint. If the machine is designed that way, either look for another machine or just make sure that when you start executing the exercise you stop going down once you hit the 90-degree angle.",
                            "2.	Using your quadriceps, extend your legs to the maximum as you exhale. Ensure that the rest of the body remains stationary on the seat. Pause a second on the contracted position.",
@@ -655,7 +655,7 @@ export const exercise = [
             },
             {
                 name: "Leg Press",
-                image: null,
+                image: require('../assets/exercise/Quadriceps/LegPress.jpg'),
                 procedure: [
                            "1.	Using a leg press machine, sit down on the machine and place your legs on the platform directly in front of you at a medium (shoulder width) foot stance. (Note: For the purposes of this discussion we will use the medium stance described above which targets overall development; however you can choose any of the three stances described in the foot positioning section).",
                            "2.	Lower the safety bars holding the weighted platform in place and press the platform all the way up until your legs are fully extended in front of you. Tip: Make sure that you do not lock your knees. Your torso and the legs should make a perfect 90-degree angle. This will be your starting position.",
@@ -668,7 +668,7 @@ export const exercise = [
             },
             {
                 name: "One Leg Barbell Squat",
-                image: null,
+                image: require('../assets/exercise/Quadriceps/OneLegBarbellSquat.jpg'),
                 procedure: [
                            "1.	Start by standing about 2 to 3 feet in front of a flat bench with your back facing the bench. Have a barbell in front of you on the floor. Tip: Your feet should be shoulder width apart from each other.",
                            "2.	Bend the knees and use a pronated grip with your hands being wider than shoulder width apart from each other to lift the barbell up until you can rest it on your chest.",
@@ -683,7 +683,7 @@ export const exercise = [
             },
             {
                 name: "Squat",
-                image: null,
+                image: require('../assets/exercise/Quadriceps/Squat.jpg'),
                 procedure: [
                            "1.	Begin with the barbell supported on top of the traps. The chest should be up and the head facing forward. Adopt a hip-width stance with the feet turned out as needed.",
                            "2.	Descend by flexing the knees, refraining from moving the hips back as much as possible. This requires that the knees travel forward. Ensure that they stay align with the feet. The goal is to keep the torso as upright as possible.",
@@ -693,7 +693,7 @@ export const exercise = [
             },
             {
                 name: "Barbell Lunge",
-                image: null,
+                image: require('../assets/exercise/Quadriceps/BarbellLunge.jpg'),
                 procedure: [
                            "1.	This exercise is best performed inside a squat rack for safety purposes. To begin, first set the bar on a rack just below shoulder level. Once the correct height is chosen and the bar is loaded, step under the bar and place the back of your shoulders (slightly below the neck) across it.",
                            "2.	Hold on to the bar using both arms at each side and lift it off the rack by first pushing with your legs and at the same time straightening your torso.",
@@ -707,7 +707,7 @@ export const exercise = [
             },
             {
                 name: "Barbell Lunge",
-                image: null,
+                image: require('../assets/exercise/Quadriceps/BarbellLunge.jpg'),
                 procedure: [
                            "1.	This exercise is best performed inside a squat rack for safety purposes. To begin, first set the bar on a rack just below shoulder level. Once the correct height is chosen and the bar is loaded, step under the bar and place the back of your shoulders (slightly below the neck) across it.",
                            "2.	Hold on to the bar using both arms at each side and lift it off the rack by first pushing with your legs and at the same time straightening your torso.",
@@ -728,7 +728,7 @@ export const exercise = [
         data: [
             {
                 name: "Lateral Raise",
-                image: null,
+                image: require('../assets/exercise/Shoulder/LateralRise.jpg'),
                 procedure: [
                            "1.	Pick a couple of dumbbells and stand with a straight torso and the dumbbells by your side at arm’s length with the palms of the hand facing you. This will be your starting position.",
                            "2.	While maintaining the torso in a stationary position (no swinging), lift the dumbbells to your side with a slight bend on the elbow and the hands slightly tilted forward as if pouring water in a glass. Continue to go up until your arms are parallel to the floor. Exhale as you execute this movement and pause for a second at the top.",
@@ -740,7 +740,7 @@ export const exercise = [
             },
             {
                 name: "Bent Over Low- Pulley Side Lateral",
-                image: null,
+                image: require('../assets/exercise/Shoulder/BentOverLow-PulleySideLateral.jpg'),
                 procedure: [
                            "1.	Select a weight and hold the handle of the low pulley with your right hand.",
                            "2.	Bend at the waist until your torso is nearly parallel to the floor. Your legs should be slightly bent with your left hand placed on your lower left thigh. Your right arm should be hanging from your shoulder in front of you and with a slight bend at the elbow. This will be your starting position.",
@@ -753,7 +753,7 @@ export const exercise = [
             },
             {
                 name: "Barbell Shrug Behind Back",
-                image: null,
+                image: require('../assets/exercise/Shoulder/BarbellShrugBehindBack.jpg'),
                 procedure: [
                            "1.	Stand up straight with your feet at shoulder width as you hold a barbell with both hands behind your back using a pronated grip (palms facing back). Tip: Your hands should be a little wider than shoulder width apart. You can use wrist wraps for this exercise for better grip. This will be your starting position.",
                            "2.	Raise your shoulders up as far as you can go as you breathe out and hold the contraction for a second. Tip: Refrain from trying to lift the barbell by using your biceps. The arms should remain stretched out at all times.",
@@ -765,7 +765,7 @@ export const exercise = [
             },
             {
                 name: "Front Dumbbell Raise",
-                image: null,
+                image: require('../assets/exercise/Shoulder/FrontDumbbellRaise.jpg'),
                 procedure: [
                            "1.	Pick a couple of dumbbells and stand with a straight torso and the dumbbells on front of your thighs at arm’s length with the palms of the hand facing your thighs. This will be your starting position.",
                            "2.	While maintaining the torso stationary (no swinging), lift the left dumbbell to the front with a slight bend on the elbow and the palms of the hands always facing down. Continue to go up until you arm is slightly above parallel to the floor. Exhale as you execute this portion of the movement and pause for a second at the top. Inhale after the second pause.",
@@ -777,7 +777,7 @@ export const exercise = [
             },
             {
                 name: "Standing Low-Pulley Deltoid Raise",
-                image: null,
+                image: require('../assets/exercise/Shoulder/Standing.jpg'),
                 procedure: [
                            "1.	Start by standing to the right side of a low pulley row. Use your left hand to come across the body and grab a single handle attached to the low pulley with a pronated grip (palms facing down). Rest your arm in front of you. Your right hand should grab the machine for better support and balance.",
                            "2.	Make sure that your back is erect and your feet are shoulder width apart from each other. This is the starting position.",
@@ -790,7 +790,7 @@ export const exercise = [
             },
             {
                 name: "Dumbbell Lying Rear Raise",
-                image: null,
+                image: require('../assets/exercise/Shoulder/DumbellLyingRearRaise.jpg'),
                 procedure: [
                            "1.	While holding a dumbbell in each hand, lay with your chest down on a slightly inclined (around 15 degrees when measured from the floor) adjustable bench.",
                            "2.	Position the palms of the hands in a neutral manner (palms facing your torso) as you keep the arms extended with the elbows slightly bent. This will be your starting position.",
@@ -803,7 +803,7 @@ export const exercise = [
             },
             {
                 name: "Seated Dumbbell Press",
-                image: null,
+                image: require('../assets/exercise/Shoulder/SeatedDumbbellPress.jpg'),
                 procedure: [
                            "1.	Grab a couple of dumbbells and sit on a military press bench or a utility bench that has a back support on it as you place the dumbbells upright on top of your thighs.",
                            "2.	Clean the dumbbells up one at a time by using your thighs to bring the dumbbells up to shoulder height at each side.",
@@ -817,7 +817,7 @@ export const exercise = [
             },
             {
                 name: "Seated Military Press",
-                image: null,
+                image: require('../assets/exercise/Shoulder/SeatedMilitaryPress.jpg'),
                 procedure: [
                           "1.	Sit on a Military Press Bench with a bar behind your head and either have a spotter give you the bar (better on the rotator cuff this way) or pick it up yourself carefully with a pronated grip (palms facing forward). Tip: Your grip should be wider than shoulder width and it should create a 90-degree angle between the forearm and the upper arm as the barbell goes down.",
                           "2.	Once you pick up the barbell with the correct grip length, lift the bar up over your head by locking your arms. Hold at about shoulder level and slightly in front of your head. This is your starting position.",
@@ -830,7 +830,7 @@ export const exercise = [
             },
             {
                 name: "Barbell Press Behind Back",
-                image: null,
+                image: require('../assets/exercise/Shoulder/BarbellPressBehindBack.jpg'),
                 procedure: [
                            "1.	This exercise is best performed inside a squat rack for easier pick up of the bar. To begin, first set the bar on a rack that best matches your height. Once the correct height is chosen and the bar is loaded, step under the bar and place the back of your shoulders (slightly below the neck) across it.",
                            "2.	Hold on to the bar using both arms at each side and lift it off the rack by first pushing with your legs and at the same time straightening your torso.",
@@ -844,7 +844,7 @@ export const exercise = [
             },
             {
                 name: "Upright Barbell Row",
-                image: null,
+                image: require('../assets/exercise/Shoulder/UprightBarbellRow.jpg'),
                 procedure: [
                            "1.	Grasp a barbell with an overhand grip that is slightly less than shoulder width. The bar should be resting on the top of your thighs with your arms extended and a slight bend in your elbows. Your back should also be straight. This will be your starting position.",
                            "2.	Now exhale and use the sides of your shoulders to lift the bar, raising your elbows up and to the side. Keep the bar close to your body as you raise it. Continue to lift the bar until it nearly touches your chin. Tip: Your elbows should drive the motion, and should always be higher than your forearms. Remember to keep your torso stationary and pause for a second at the top of the movement.",
@@ -863,7 +863,7 @@ export const exercise = [
         data: [
             {
                 name: "Reverse Grip PushDown",
-                image: null,
+                image: require('../assets/exercise/Triceps/ReverseGripPushDown.jpg'),
                 procedure: [
                            "1.	Start by setting a bar attachment (straight or e-z) on a high pulley machine.",
                            "2.	Facing the bar attachment, grab it with the palms facing up (supinated grip) at shoulder width. Lower the bar by using your lats until your arms are fully extended by your sides. Tip: Elbows should be in by your sides and your feet should be shoulder width apart from each other. This is the starting position.",
@@ -876,7 +876,7 @@ export const exercise = [
             },
             {
                 name: "Kneeling Cable Triceps Extension",
-                image: null,
+                image: require('../assets/exercise/Triceps/KneelingCableTricepsExtension.jpg'),
                 procedure: [
                            "1.	Place a bench sideways in front of a high pulley machine.",
                            "2.	Hold a straight bar attachment above your head with your hands about 6 inches apart with your palms facing down.",
@@ -891,7 +891,7 @@ export const exercise = [
             },
             {
                 name: "Triceps Pushdown V-bar",
-                image: null,
+                image: require('../assets/exercise/Triceps/TricepsPushdownV-bar.jpg'),
                 procedure: [
                            "1.	Attach a V-Bar to a high pulley and grab with an overhand grip (palms facing down) at shoulder width.",
                            "2.	Standing upright with the torso straight and a very small inclination forward, bring the upper arms close to your body and perpendicular to the floor. The forearms should be pointing up towards the pulley as they hold the bar. The thumbs should be higher than the small finger. This is your starting position.",
@@ -904,7 +904,7 @@ export const exercise = [
             },
             {
                 name: "Triceps Pushdown Rope",
-                image: null,
+                image: require('../assets/exercise/Triceps/TricepsPushdownRope.jpg'),
                 procedure: [
                            "1.	Attach a rope attachment to a high pulley and grab with a neutral grip (palms facing each other).",
                            "2.	Standing upright with the torso straight and a very small inclination forward, bring the upper arms close to your body and perpendicular to the floor. The forearms should be pointing up towards the pulley as they hold the rope with the palms facing each other. This is your starting position.",
@@ -917,7 +917,7 @@ export const exercise = [
             },
             {
                 name: "Dumbbell Triceps Extension",
-                image: null,
+                image: require('../assets/exercise/Triceps/DumbbellTricepsExtension.jpg'),
                 procedure: [
                            "1.	To begin, stand up with a dumbbell held by both hands. Your feet should be about shoulder width apart from each other. Slowly use both hands to grab the dumbbell and lift it over your head until both arms are fully extended.",
                            "2.	The resistance should be resting in the palms of your hands with your thumbs around it. The palm of the hands should be facing up towards the ceiling. This will be your starting position.",
@@ -930,7 +930,7 @@ export const exercise = [
             },
             {
                 name: "One-Arm Dumbbell Triceps Extension",
-                image: null,
+                image: require('../assets/exercise/Triceps/One-ArmDumbbellTricepsExtension.jpg'),
                 procedure: [
                            "1.	Grab a dumbbell and either sit on a military press bench or a utility bench that has a back support on it as you place the dumbbells upright on top of your thighs or stand up straight.",
                            "2.	Clean the dumbbell up to bring it to shoulder height and then extend the arm over your head so that the whole arm is perpendicular to the floor and next to your head. The dumbbell should be on top of you. The other hand can be kept fully extended to the side, by the waist, supporting the upper arm that has the dumbbell or grabbing a fixed surface.",
@@ -944,7 +944,7 @@ export const exercise = [
             },
             {
                 name: "Dips",
-                image: null,
+                image: require('../assets/exercise/Triceps/Dips.jpg'),
                 procedure: [
                            "1.	To get into the starting position, hold your body at arm's length with your arms nearly locked above the bars.",
                            "2.	Now, inhale and slowly lower yourself downward. Your torso should remain upright and your elbows should stay close to your body. This helps to better focus on tricep involvement. Lower yourself until there is a 90 degree angle formed between the upper arm and forearm.",
@@ -956,7 +956,7 @@ export const exercise = [
             },
             {
                 name: "Triceps Dumbbell Kickbacks",
-                image: null,
+                image: require('../assets/exercise/Triceps/TricepsDumbbellKickback.jpg'),
                 procedure: [
                            "1.	Start with a dumbbell in each hand and your palms facing your torso. Keep your back straight with a slight bend in the knees and bend forward at the waist. Your torso should be almost parallel to the floor. Make sure to keep your head up. Your upper arms should be close to your torso and parallel to the floor. Your forearms should be pointed towards the floor as you hold the weights. There should be a 90-degree angle formed between your forearm and upper arm. This is your starting position.",
                            "2.	Now, while keeping your upper arms stationary, exhale and use your triceps to lift the weights until the arm is fully extended. Focus on moving the forearm.",
@@ -968,7 +968,7 @@ export const exercise = [
             },
             {
                 name: "Barbell Triceps Extension",
-                image: null,
+                image: require('../assets/exercise/Triceps/BarbellTricepsExtension.jpg'),
                 procedure: [
                            "1.	While holding a barbell or EZ Curl bar with a pronated grip (palms facing forward), lie on your back on a flat bench with your head close to the end of the bench. Tip: If you are holding a barbell grab it using a shoulder-width grip and if you are using an E-Z Bar grab it on the inner handles.",
                            "2.	Extend your arms in front of you and slowly bring the bar back in a semi circular motion (while keeping the arms extended) to a position over your head. At the end of this step your arms should be overhead and perpendicular to the floor. This will be your starting position. Tip: Keep your elbows in at all times.",
@@ -981,7 +981,7 @@ export const exercise = [
             },
             {
                 name: "Pronated Triceps Extension",
-                image: null,
+                image: require('../assets/exercise/Triceps/PronatedTricepsExtension.jpg'),
                 procedure: [
                            "1.	Lie flat on a bench while holding a dumbbell at arm’s length. Your arm should be perpendicular to your body. The palm of your hand should be facing towards your feet as a pronated grip is required to perform this exercise.",
                            "2.	Place your non lifting hand on your bicep for support.",

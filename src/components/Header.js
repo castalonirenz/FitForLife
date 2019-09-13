@@ -23,7 +23,7 @@ class Header extends Component{
                     </TouchableWithoutFeedback>
                     <Text style={[Theme.HeaderText, {color:"#fff"}]}>{this.props.headerText}</Text>
                    <TouchableOpacity onPress={this.props.NotificationPress}>
-                        <Icon name={Platform.OS === "ios" ? "ios-notifications" : "md-notifications"} size={RFPercentage(3)} color="#fff" />
+                        {/* <Icon name={Platform.OS === "ios" ? "ios-notifications" : "md-notifications"} size={RFPercentage(3)} color="#fff" /> */}
                    </TouchableOpacity>
                 </View>
             </View>

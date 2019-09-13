@@ -3,8 +3,11 @@ import { View, Text, SafeAreaView, TouchableOpacity, Image, Dimensions, ScrollVi
 import Icon from 'react-native-vector-icons/Ionicons';
 import { HeaderComponent } from "../components/index";
 import { Theme } from '../themes/Theme';
-const {width} = Dimensions.get('screen')
-export default class SelectedExercise extends Component {
+const { width } = Dimensions.get('screen')
+import { addNewExercise } from "../redux/actions/AddToExercise";
+import { connect } from "react-redux";
+let tempArr = []
+class SelectedExercise extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -12,15 +15,33 @@ export default class SelectedExercise extends Component {
     }
 
     componentWillMount() {
+        tempArr = this.props.ExerciseList
         const { navigation } = this.props
         const exerciseList = navigation.getParam('list', [])
         this.setState({ exerciseList: exerciseList })
 
     }
 
+    _addExercise = (val) => {
+        console.log(val.name)
+        console.log(tempArr.some(data => data.name !== val.name))
+       
+            if (tempArr.some(data => data.name === val.name)) {
+                console.log('object found inside the array')
+                alert('You have already added this to your exercise')
+            }
+            else {
+           
+                tempArr.push(val)
+            }
+        
+        this.props.AddExercise(tempArr)
+        // console.log(tempArr)
+    }
+
 
     render() {
-        console.log(this.state.exerciseList)
+        console.log(tempArr, "temp array")
         return (
             <SafeAreaView style={{ flex: 1 }}>
                 <HeaderComponent Press={() => this.props.navigation.goBack()}
@@ -28,7 +49,7 @@ export default class SelectedExercise extends Component {
                     ImageStyle={[Theme.iconSize, { tintColor: "#fff" }]}
                     ImageSource={require('../assets/icon/back.png')} />
                 <ScrollView showsVerticalScrollIndicator={false}>
-                    <View style={{ flex: 1 ,alignItems:"center"}}>
+                    <View style={{ flex: 1, alignItems: "center" }}>
                         {this.state.exerciseList.data.map((items, key) => (
                             console.log(items),
                             < View
@@ -45,16 +66,16 @@ export default class SelectedExercise extends Component {
                                     resizeMode="stretch"
                                     style={{ width: "100%", height: 200 }}
                                     source={items.image} />
-                                <View style={{width:"100%", flexDirection:"row", justifyContent:"space-between", padding: 10, alignItems:"center"}}>
+                                <View style={{ width: "100%", flexDirection: "row", justifyContent: "space-between", padding: 10, alignItems: "center" }}>
                                     <Text style={[Theme.HeaderText, { fontWeight: "bold" }]}>{items.name}</Text>
-                                    <TouchableOpacity>
+                                    <TouchableOpacity onPress={this._addExercise.bind(null, items)}>
                                         <Icon color="#3bcaef" name="ios-add-circle" size={Theme.iconSize.height} />
                                     </TouchableOpacity>
-                                    </View>
+                                </View>
                                 {items.procedure.map((procedure, i) => (
-                                    <View style={{ marginTop: 20, alignSelf:"flex-start" }}>
+                                    <View style={{ marginTop: 20, alignSelf: "flex-start" }}>
                                         <Text>{procedure}</Text>
-                                        </View>
+                                    </View>
                                 ))}
                             </View>
                         ))}
@@ -64,3 +85,17 @@ export default class SelectedExercise extends Component {
         );
     }
 }
+
+const mapStateToProps = state => {
+    return {
+        ExerciseList: state.ExerciseList.exercise
+    }
+}
+
+const mapDispatchToProps = dispatch => {
+    return {
+        AddExercise: (val) => dispatch(addNewExercise(val))
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(SelectedExercise)

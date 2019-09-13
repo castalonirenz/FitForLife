@@ -11,6 +11,7 @@ export  {Picker} from './picker'
 export {ModalPass} from './Modal'
 export {LoadingModal} from './Modal'
 export {MoreModal} from './Modal'
+export {Exercise} from './Exercise'
 export const HeaderComponent = Header
 
 

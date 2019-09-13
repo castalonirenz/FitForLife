@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { View, Text, SafeAreaView, ScrollView, TouchableOpacity, Image } from 'react-native';
+import { View, Text, SafeAreaView, ScrollView, TouchableOpacity, Image, Dimensions } from 'react-native';
 import firebase from 'react-native-firebase';
-import {HeaderComponent} from '../components/index'
+import {HeaderComponent, Exercise} from '../components/index'
 import { Theme } from '../themes/Theme';
-import { Exercise } from "../SubViews/Exercise";
+const {width} = Dimensions.get('screen')
 class HomeScreen extends Component {
   constructor(props) {
     super(props);
@@ -92,17 +92,34 @@ class HomeScreen extends Component {
     }
   }
 
+  _selectedExercise = (data) => {
+    this.props.navigation.navigate('Exercise',{
+      list: data
+    })
+  }
+
   render() {
     return (
       <SafeAreaView style={{flex: 1}}>
        <HeaderComponent 
         headerText="FIT FOR LIFE"
         />
-        <ScrollView>
-          <View style={{flex: 1}}>
-          <Exercise/>
-          </View>
-        </ScrollView>
+      <ScrollView showsVerticalScrollIndicator={false}>
+        <View style={{flex: 1}}>
+            <ScrollView
+              snapToInterval={width}
+              decelerationRate="fast"
+              snapToAlignment={'center'}
+              showsHorizontalScrollIndicator={false}
+              horizontal={true}>
+                <Exercise exerciseSelected={this._selectedExercise} />
+           
+            </ScrollView>
+            <View style={{flex: 1}}>
+              <Text>Renz</Text>
+            </View>
+        </View>
+      </ScrollView>
       </SafeAreaView>
     );
   }

@@ -37,42 +37,52 @@ class SelectedExercise extends Component {
     _addData = (val) => {
 
         if(this.state.header === "exercise"){
- 
-                if (tempArr.some(data => data.name === val.name)) {
+                console.log(tempArr, 'temp')
+              if(Array.isArray(tempArr)){
+                  if (tempArr.some(data => data.name === val.name)) {
 
-                    tempArr.map((i, k) => {
-                        if (i.name === val.name) {
-                            // tempArr.splice(k, 1)
-                            Alert.alert(
-                                'Warning',
-                                'Do you want to delete this saved exercise?',
-                                [
-                                    {
-                                        text: 'No',
-                                        onPress: () => console.log('Cancel Pressed'),
-                                        style: 'cancel',
-                                    },
-                                    { text: 'Yes', onPress: () => {
-                                        tempArr.splice(k, 1)
-                                        this.props.AddExercise(tempArr)
-                                        this.forceUpdate()
-                                    } },
-                                ],
-                                { cancelable: false },
-                            );
-                        }
+                      tempArr.map((i, k) => {
+                          if (i.name === val.name) {
+                              // tempArr.splice(k, 1)
+                              Alert.alert(
+                                  'Warning',
+                                  'Do you want to delete this saved exercise?',
+                                  [
+                                      {
+                                          text: 'No',
+                                          onPress: () => console.log('Cancel Pressed'),
+                                          style: 'cancel',
+                                      },
+                                      {
+                                          text: 'Yes', onPress: () => {
+                                              tempArr.splice(k, 1)
+                                              this.props.AddExercise([...tempArr])
+                                              // this.forceUpdate()
+                                          }
+                                      },
+                                  ],
+                                  { cancelable: false },
+                              );
+                          }
 
-                    })
-                }
-                else {
-                    tempArr.push(val)
-                    this.props.AddExercise(tempArr)
-                    this.forceUpdate()
-                }
+                      })
+                  }
+                  else {
+                      tempArr.push(val)
+                      this.props.AddExercise([...tempArr])
+
+                  }
+              }
+              else{
+                  console.log(tempArr)
+                  tempArr.push(val)
+                  this.props.AddExercise(...tempArr)
+              }
               
       
         }
         else if(this.state.header === "nutrition"){
+            console.log(val)
             if (tempArr.some(data => data.name === val.name)) {
 
                 tempArr.map((i, k) => {
@@ -90,8 +100,8 @@ class SelectedExercise extends Component {
                                 {
                                     text: 'Yes', onPress: () => {
                                         tempArr.splice(k, 1)
-                                        this.props.AddNutrition(tempArr)
-                                        this.forceUpdate()
+                                        this.props.AddNutrition([...tempArr])
+                                    
                                     }
                                 },
                             ],
@@ -103,8 +113,8 @@ class SelectedExercise extends Component {
             }
             else {
                 tempArr.push(val)
-                this.props.AddNutrition(tempArr)
-                this.forceUpdate()
+                this.props.AddNutrition([...tempArr])
+               
             }
         }
     }
@@ -139,8 +149,8 @@ class SelectedExercise extends Component {
                                     <TouchableOpacity onPress={this._addData.bind(null, items)}>
                                         <Icon 
                                             color={tempArr.some(data => data.name === items.name) ? 'red' : '#3bcaef'}
-                                          //  color="blue"
-                                          //  name="ios-add-circle"
+                                        //    color="blue"
+                                        //    name="ios-add-circle"
                                             name={tempArr.some(data => data.name === items.name) ? 'ios-remove-circle' : 'ios-add-circle'}
                                          size={Theme.iconSize.height} />
                                     </TouchableOpacity>

@@ -1002,7 +1002,7 @@ export const nutrition = [
         image: require('../assets/nutrition/image/1800.jpg'),
         data:[
             {
-                name: "Day 1:",
+                name: "1,800 Calories: Day 1",
                 image: require('../assets/nutrition/image/1800.jpg'),
                 procedure: [
                     "Breakfast (382 calories)",
@@ -1037,7 +1037,7 @@ export const nutrition = [
                 ]
             },
             {
-                name: "Day 2:",
+                name: "1,800 Calories: Day 2",
                 image: require('../assets/nutrition/image/1800.jpg'),
                 procedure: [
                     "Breakfast (382 calories)",
@@ -1068,7 +1068,7 @@ export const nutrition = [
                 ]
             },
             {
-                name: "Day 3:",
+                name: "1,800 Calories: Day 3",
                 image: require('../assets/nutrition/image/1800.jpg'),
                 procedure: [
                     "Breakfast (405 calories)",
@@ -1104,7 +1104,7 @@ export const nutrition = [
                 ]
             },
             {
-                name: "Day 4:",
+                name: "1,800 Calories: Day 4",
                 image: require('../assets/nutrition/image/1800.jpg'),
                 procedure: [
                     "Breakfast (405 calories)",
@@ -1135,7 +1135,7 @@ export const nutrition = [
                 ]
             },
             {
-                name: "Day 5:",
+                name: "1,800 Calories: Day 5",
                 image: require('../assets/nutrition/image/1800.jpg'),
                 procedure: [
                     "Breakfast (369 calories)",
@@ -1167,7 +1167,7 @@ export const nutrition = [
                 ]
             },
             {
-                name: "Day 6:",
+                name: "1,800 Calories: Day 6",
                 image: require('../assets/nutrition/image/1800.jpg'),
                 procedure: [
                     "Breakfast (369 calories)",
@@ -1195,7 +1195,7 @@ export const nutrition = [
                 ]
             },
             {
-                name: "Day 7:",
+                name: "1,800 Calories: Day 7",
                 image: require('../assets/nutrition/image/1800.jpg'),
                 procedure: [
                     "Breakfast (362 calories)",
@@ -1233,7 +1233,7 @@ export const nutrition = [
         image: require('../assets/nutrition/image/2000.jpg'),
         data:[
             {
-                name: "Day 1:",
+                name: "2,000 Calories: Day 1",
                 image: require('../assets/nutrition/image/2000.jpg'),
                 procedure: [
                     "Breakfast (479 calories)",
@@ -1265,7 +1265,7 @@ export const nutrition = [
                 ]
             },
             {
-                name: "Day 2:",
+                name: "2,000 Calories:: Day 2",
                 image: require('../assets/nutrition/image/2000.jpg'),
                 procedure: [
                     "Breakfast (479 calories)",
@@ -1293,7 +1293,7 @@ export const nutrition = [
                 ]
             },
             {
-                name: "Day 3:",
+                name: "2,000 Calories: Day 3",
                 image: require('../assets/nutrition/image/2000.jpg'),
                 procedure: [
                     "Breakfast (479 calories)",
@@ -1320,7 +1320,7 @@ export const nutrition = [
                 ]
             },
             {
-                name: "Day 4:",
+                name: "2,000 Calories: Day 4",
                 image: require('../assets/nutrition/image/2000.jpg'),
                 procedure: [
                     "Breakfast (479 calories)",
@@ -1350,7 +1350,7 @@ export const nutrition = [
                 ]
             },
             {
-                name: "Day 5:",
+                name: "2,000 Calories: Day 5",
                 image: require('../assets/nutrition/image/2000.jpg'),
                 procedure: [
                     "Breakfast (447 calories)",
@@ -1381,7 +1381,7 @@ export const nutrition = [
                 ]
             },
             {
-                name: "Day 6:",
+                name: "2,000 Calories: Day 6",
                 image: require('../assets/nutrition/image/2000.jpg'),
                 procedure: [
                     "Breakfast (447 calories)",
@@ -1409,7 +1409,7 @@ export const nutrition = [
                 ]
             },
             {
-                name: "Day 7:",
+                name: "2,000 Calories: Day 7",
                 image: require('../assets/nutrition/image/2000.jpg'),
                 procedure: [
                     "Breakfast (447 calories)",
@@ -1446,7 +1446,7 @@ export const nutrition = [
         image: require('../assets/nutrition/image/2400.jpg'),
         data:[
             {
-                name: "Day 1:",
+                name: "2,400 Calories: Day 1",
                 image: require('../assets/nutrition/image/2400.jpg'),
                 procedure: [
                     "Breakfast (489 calories)",
@@ -1484,7 +1484,7 @@ export const nutrition = [
                 ]
             },
             {
-                name: "Day 2:",
+                name: "2,400 Calories: Day 2",
                 image: require('../assets/nutrition/image/2400.jpg'),
                 procedure: [
                     "Breakfast (485 calories)",
@@ -1518,7 +1518,7 @@ export const nutrition = [
                 ]
             },
             {
-                name: "Day 3:",
+                name: "2,400 Calories: Day 3",
                 image: require('../assets/nutrition/image/2400.jpg'),
                 procedure: [
                     "Breakfast (488 calories)",
@@ -1556,7 +1556,7 @@ export const nutrition = [
                 ]
             },
             {
-                name: "Day 4:",
+                name: "2,400 Calories: Day 4",
                 image: require('../assets/nutrition/image/2400.jpg'),
                 procedure: [
                     "Breakfast (488 calories)",
@@ -1589,7 +1589,7 @@ export const nutrition = [
                 ]
             },
             {
-                name: "Day 5:",
+                name: "2,400 Calories: Day 5",
                 image: require('../assets/nutrition/image/2400.jpg'),
                 procedure: [
                     "Breakfast (472 calories)",
@@ -1622,7 +1622,7 @@ export const nutrition = [
                 ]
             },
             {
-                name: "Day 6:",
+                name: "2,400 Calories: Day 6",
                 image: require('../assets/nutrition/image/2400.jpg'),
                 procedure: [
                     "Breakfast (469 calories)",
@@ -1653,7 +1653,7 @@ export const nutrition = [
                 ]
             },
             {
-                name: "Day 7:",
+                name: "2,400 Calories: Day 7",
                 image: require('../assets/nutrition/image/2400.jpg'),
                 procedure: [
                     "Breakfast (466 calories)",
@@ -1692,7 +1692,7 @@ export const nutrition = [
         image: require('../assets/nutrition/image/Ketogenic.jpg'),
         data:[
             {
-                name: "Day 1:",
+                name: "Ketogenic: Day 1",
                 image: require('../assets/nutrition/image/Ketogenic.jpg'),
                 procedure: [
                     "BREAKFAST",
@@ -1711,7 +1711,7 @@ export const nutrition = [
                 ]
             },
             {
-                name: "Day 2:",
+                name: "Ketogenic: Day 2",
                 image: require('../assets/nutrition/image/Ketogenic.jpg'),
                 procedure: [
                     "BREAKFAST",
@@ -1731,7 +1731,7 @@ export const nutrition = [
                 ]
             },
             {
-                name: "Day 3:",
+                name: "Ketogenic: Day 3",
                 image: require('../assets/nutrition/image/Ketogenic.jpg'),
                 procedure: [
                     "BREAKFAST",
@@ -1747,7 +1747,7 @@ export const nutrition = [
                 ]
             },
             {
-                name: "Day 4:",
+                name: "Ketogenic: Day 4",
                 image: require('../assets/nutrition/image/Ketogenic.jpg'),
                 procedure: [
                     "BREAKFAST",
@@ -1765,7 +1765,7 @@ export const nutrition = [
                 ]
             },
             {
-                name: "Day 5:",
+                name: "Ketogenic: Day 5",
                 image: require('../assets/nutrition/image/Ketogenic.jpg'),
                 procedure: [
                     "BREAKFAST",
@@ -1783,7 +1783,7 @@ export const nutrition = [
                 ]
             },
             {
-                name: "Day 6:",
+                name: "Ketogenic: Day 6",
                 image: require('../assets/nutrition/image/Ketogenic.jpg'),
                 procedure: [
                     "BREAKFAST",
@@ -1803,7 +1803,7 @@ export const nutrition = [
                 ]
             },
             {
-                name: "Day 7:",
+                name: "Ketogenic: Day 7",
                 image: require('../assets/nutrition/image/Ketogenic.jpg'),
                 procedure: [
                     "BREAKFAST",

@@ -76,25 +76,6 @@ class HomeScreen extends Component {
 
             </ScrollView>
 
-{/* 
-            {this.props.ExerciseList !== null ?
-              <View style={{alignSelf:"center", width: "100%",}}>
-                <Text style={Theme.HeaderText}>Your Saved Exercise</Text>
-                <Exercise
-                  parentStyle={{ flexDirection: 'column', backgrondColor: "red" }}
-                  exercise={this.props.ExerciseList}
-                  exerciseSelected={this._viewSavedExercise} />
-              </View>
-              :
-             <View style={{alignSelf:"center"}}>
-                <Text style={Theme.HeaderText}>Your saved exercise will show here</Text>
-              </View>
-            }
- */}
-
-
-
-
           </View>
 
         </ScrollView>

@@ -2,20 +2,18 @@
 import React, { Component } from 'react'
 import { View, Image, Text, SafeAreaView, TouchableOpacity, Dimensions } from "react-native";
 import { Theme } from "../themes/Theme";
-import { exercise } from "../utils/exercise";
-const {width} = Dimensions.get('screen')
-export const Exercise = props => {
+const {width, height} = Dimensions.get('screen')
+export const Data = props => {
     
-    let exercise = props.exercise
-    let exerciseComponent
-    if(exercise.length !== 0 || exercise !== undefined){
-         exerciseComponent = props.exercise.map((items, index) => (
-            console.log(items.type,''),
+    let data = props.data
+    let dataComponent
+    if(data.length !== 0 || data !== undefined){
+         dataComponent = data.map((items, index) => (
             <TouchableOpacity
-                onPress={props.exerciseSelected.bind(null, items)}
+                onPress={props.itemSelected.bind(null, items)}
                 style={[Theme.shadow,
                 {
-                    marginLeft: index >= 1 ? 10 : 0,
+                    marginLeft: index >= 1 ? 10 : 0, height: height / 4,
                     backgroundColor: "#fff", alignItems: "center", borderRadius: 10, marginTop: 10
                 }]}>
                 <Image
@@ -28,7 +26,7 @@ export const Exercise = props => {
     }
     return (
         <View style={[{  padding: 10}, props.parentStyle,]}>
-            {exerciseComponent}
+            {dataComponent}
         </View>
     )
 }

@@ -4,10 +4,10 @@ import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 import autoMergeLevel2 from 'redux-persist/lib/stateReconciler/autoMergeLevel2';
 import Auth from "./reducers/Auth";
-import ExerciseList from './reducers/AddToExercise'
+import DataList from './reducers/AddData'
 const combineReducer = combineReducers({
         Auth: Auth,
-        ExerciseList: ExerciseList
+        DataList: DataList
 })
 
 const persistConfig = {

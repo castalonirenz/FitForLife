@@ -13,26 +13,26 @@ const TabNav = createBottomTabNavigator({
             tabBarIcon: ({ tintColor }) => (
                 // <Icon name={Platform.OS === "ios" ? "ios-home" : "md-home"} size={RFPercentage(3)} color={tintColor} />
                 <View style={{alignItems:"center"}}>
-                    <Image source={require('../assets/icon/gym.png')} style={[Theme.iconSize, { tintColor: tintColor }]} />
+                    <Image source={require('../assets/icon/home.png')} style={[Theme.iconSize, { tintColor: tintColor }]} />
                 </View>
             )
         }
     },
-    Diet: {
-        screen: HomeScreen,
-        navigationOptions: {
-            // tabBarLabel: "Notification",
-            tabBarIcon: ({ tintColor }) => (
-                <View style={{alignItems:"center"}}>
-                    <Image source={require('../assets/icon/fork.png')} style={[Theme.iconSize, { tintColor: tintColor }]}/>
-                    {/* <FontAwesomeIcon icon={faBell} size={RFPercentage(3)} color={tintColor} /> */}
+    // Diet: {
+    //     screen: HomeScreen,
+    //     navigationOptions: {
+    //         // tabBarLabel: "Notification",
+    //         tabBarIcon: ({ tintColor }) => (
+    //             <View style={{alignItems:"center"}}>
+    //                 <Image source={require('../assets/icon/fork.png')} style={[Theme.iconSize, { tintColor: tintColor }]}/>
+    //                 {/* <FontAwesomeIcon icon={faBell} size={RFPercentage(3)} color={tintColor} /> */}
                    
-                </View>
-                // <BadgedIcon type="ionicon" name="ios-notifications" />
-            )
-        }
-    }
-    ,
+    //             </View>
+    //             // <BadgedIcon type="ionicon" name="ios-notifications" />
+    //         )
+    //     }
+    // }
+    // ,
     qr: {
         screen: HomeScreen,
         navigationOptions: {

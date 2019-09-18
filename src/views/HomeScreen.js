@@ -17,7 +17,7 @@ class HomeScreen extends Component {
   }
 
   _selectedData = (header, data) => {
-    // console.log(data)
+    // 
     this.props.navigation.navigate('Data', {
       list: data,
       header: header
@@ -25,7 +25,7 @@ class HomeScreen extends Component {
   }
 
   _viewSavedExercise = (data) => {
-    console.log(data)
+    
   }
 
   render() {

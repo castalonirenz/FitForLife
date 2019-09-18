@@ -21,7 +21,7 @@ class PreviewExercise extends Component {
     const data = navigation.getParam('data', null)
     const header = navigation.getParam('header', null)
 
-    console.log(data, header)
+    
     if (header === "exercise") {
       tempArr = this.props.ExerciseList
     }
@@ -47,7 +47,7 @@ class PreviewExercise extends Component {
                 [
                   {
                     text: 'No',
-                    onPress: () => console.log('Cancel Pressed'),
+                    onPress: () =>'' ,
                     style: 'cancel',
                   },
                   {
@@ -71,7 +71,7 @@ class PreviewExercise extends Component {
         }
       }
       else {
-        console.log(tempArr)
+        
         tempArr.push(val)
         this.props.AddExercise(...tempArr)
       }
@@ -79,7 +79,7 @@ class PreviewExercise extends Component {
 
     }
     else if (this.state.header === "nutrition") {
-      console.log(val)
+      
       if (tempArr.some(data => data.name === val.name)) {
 
         tempArr.map((i, k) => {
@@ -91,7 +91,7 @@ class PreviewExercise extends Component {
               [
                 {
                   text: 'No',
-                  onPress: () => console.log('Cancel Pressed'),
+                  onPress: () => '',
                   style: 'cancel',
                 },
                 {

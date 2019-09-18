@@ -17,7 +17,7 @@ class SplashScreen extends Component {
 
   componentDidMount() {
     // this.props.onLoad()
-    // console.log('mounted')
+    // 
     // this.blabla()
     this.props.navigation.navigate('Login')
   }
@@ -25,7 +25,7 @@ class SplashScreen extends Component {
   blabla = () =>{
     // setTimeout(function(){
     //   this.props.navigation.navigate('Login')
-    //   // console.log('counting')
+    //   // 
     // },2000)
   }
 

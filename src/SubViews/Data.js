@@ -31,7 +31,7 @@ class SelectedExercise extends Component {
     }
   
     componentDidUpdate(){
-      console.log('not updating')
+      
     }
 
     _addData = (val) => {
@@ -49,7 +49,7 @@ class SelectedExercise extends Component {
                                   [
                                       {
                                           text: 'No',
-                                          onPress: () => console.log('Cancel Pressed'),
+                                          onPress: () => '',
                                           style: 'cancel',
                                       },
                                       {
@@ -73,7 +73,7 @@ class SelectedExercise extends Component {
                   }
               }
               else{
-                  console.log(tempArr)
+                  
                   tempArr.push(val)
                   this.props.AddExercise(...tempArr)
               }
@@ -81,7 +81,7 @@ class SelectedExercise extends Component {
       
         }
         else if(this.state.header === "nutrition"){
-            console.log(val)
+            
             if (tempArr.some(data => data.name === val.name)) {
 
                 tempArr.map((i, k) => {
@@ -93,7 +93,7 @@ class SelectedExercise extends Component {
                             [
                                 {
                                     text: 'No',
-                                    onPress: () => console.log('Cancel Pressed'),
+                                    onPress: () => '',
                                     style: 'cancel',
                                 },
                                 {

@@ -8,7 +8,7 @@ export const addNewExercise = (data) => {
 }
 
 export const addNewNutrition = (data) => {
-    console.log(data, 'nutrition')
+    
     return{
         type: ADD_NUTRITION,
         data:data

@@ -6,7 +6,7 @@ const initialState = {
 }
 
 const DataReducer = (state = initialState, action) => {
-    console.log('exercise')
+    
     switch (action.type) {
  
         case ADD_EXERCISE:

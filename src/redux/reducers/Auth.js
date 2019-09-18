@@ -1,7 +1,8 @@
 import { LOGIN, LOGOUT } from "../actionType";
 
 const initialState = {
-    credentials: []
+    credentials: [],
+    logs: []
 }
 
 const AuthReducer = (state = initialState, action) => {
@@ -9,7 +10,8 @@ const AuthReducer = (state = initialState, action) => {
         case LOGIN:
             return{
                 ...state,
-                credentials: action.data
+                credentials: action.data,
+                logs: action.logs
             }
         case LOGOUT:
             return{

@@ -5,22 +5,10 @@ import { Touchable, Input } from "../components/index";
 import { RFPercentage, RFPercentageValue } from 'react-native-responsive-fontsize';
 import Icon from 'react-native-vector-icons/Ionicons'
 import { Formik, Field } from "formik";
-// import { actionLogin } from "../Redux/actions/index";
+import { Auth } from "../redux/actions/Auth";
 import * as Yup from "yup";
 import { connect } from "react-redux"
-import { CheckBox } from 'native-base';
-// import { setArticles, ArticlesLoad, } from "../Redux/actions/articlesData";
-// import OfflineContainer from "../components/OfflineNotice";
 const Dimension = Dimensions.get('window').width
-// import DeviceInfo from 'react-native-device-info';
-
-// const deviceInfo = {
-//   DeviceID: DeviceInfo.getUniqueID(),
-//   Model: DeviceInfo.getModel(),
-//   Brand: DeviceInfo.getBrand(),
-//   Platform: Platform.OS,
-//   Serial: "none"
-// }
 
 class Login extends Component {
   static navigationOptions = {
@@ -28,11 +16,12 @@ class Login extends Component {
   }
 
   state = {
-    remember: false
+    remember: false,
+    loadingIndicator: false
   }
 
   initialValues = {
-    email: "",
+    username: "",
     password: ""
   };
 
@@ -44,9 +33,19 @@ class Login extends Component {
     //     brand
     //     platform
     //     serial
-
-    // this.props.onLogin(values, this.state.remember, deviceInfo)
-    this.props.navigation.navigate('LoginSuccess')
+    this.setState({loadingIndicator: true})
+    this.props.onLogin(values)
+    .then(response => {
+      if(response === "success"){
+        this.props.navigation.navigate('LoginSuccess')
+        this.setState({loadingIndicator: false})
+      }
+      else{
+        alert('invalid credentials')
+        this.setState({loadingIndicator: false})
+      }
+    })
+    // this.props.navigation.navigate('LoginSuccess')
 
   }
 
@@ -65,9 +64,9 @@ class Login extends Component {
     let logo
     let connectionStatus
     let loadingIndicator
-    // if (this.props.loadingStatus === true) {
-    //   loadingIndicator = <ActivityIndicator size="large" color="#D04A02" />
-    // }
+    if (this.state.loadingIndicator === true) {
+      loadingIndicator = <ActivityIndicator size="large" color="#3bcaef" />
+    }
     return (
       <SafeAreaView style={{ flex: 1, backgroundColor: "#fff" }}>
         {/* <OfflineContainer /> */}
@@ -78,9 +77,8 @@ class Login extends Component {
             onSubmit={this._onLogin}
             validationSchema={
               Yup.object().shape({
-                email: Yup.string()
-                  .email("Email is Invalid")
-                  .required("Please enter your email"),
+                username: Yup.string()
+                  .required("Please enter your username"),
                 password: Yup.string()
                   .required("Please enter your password"),
               })}
@@ -104,14 +102,14 @@ class Login extends Component {
                       keyboardType="email-address"
                       placeholderTextColor={"gray"}
                       InputStyle={[Theme.shadow,styles.inputs, {elevation: 1}]}
-                      onChangeText={handleChange("email")}
-                      value={values.email}
-                      name="email"
-                      placeholder="Email address" />
+                      onChangeText={handleChange("username")}
+                      value={values.username}
+                      name="username"
+                      placeholder="Username" />
                   </View>
                   <View style={{ alignItems: "center" }}>
                     <Text style={[Theme.NormalText, { color: "red" }]}>
-                      {errors.email && touched.email ? errors.email : null}
+                      {errors.username && touched.username ? errors.username : null}
                     </Text>
                   </View>
                   <View style={{ flexDirection: "row", alignItems: "center", marginTop: 30, }}>
@@ -137,17 +135,18 @@ class Login extends Component {
                   </View>
 
 
-                  {/* {loadingIndicator} */}
+                  {loadingIndicator}
 
                   <View style={{ flexDirection: "row", width: "100%", justifyContent: "center", marginTop: 30 }}>
                     <View style={{ width: "45%", marginRight: 20 }}>
                       <Touchable 
                         TouchableStyle={{borderRadius: 5}}
-                        // TouchablePress={handleSubmit}
-                          TouchablePress={()=>this.props.navigation.navigate('Home')}
+                        TouchablePress={handleSubmit}
+                          // TouchablePress={()=>this.props.navigation.navigate('Home')}
                         TextStyle={{ fontSize: RFPercentage(2.0) }}>
                         Login
                      </Touchable>
+                     
                     </View>
 
                   
@@ -167,20 +166,13 @@ const styles = StyleSheet.create({
     width: "80%", color: "#000", textAlign: null, padding: 10
   }
 })
-// const mapStateToProps = state => {
-//   return {
-//     onLoginStatus: state.userCredentials.loginStatus,
-//     loadingStatus: state.loadingStatus.loadingStatus,
-//     KeepSignedIn: state.userCredentials
-//   }
-// }
 
-// const mapDispatchToProps = dispatch => {
-//   return {
-//     onLogin: (credentials, remember, deviceInfo) => dispatch(actionLogin(credentials,remember, deviceInfo)),
-//     articlesData: () => dispatch(ArticlesLoad()),
 
-//   }
-// }
+const mapDispatchToProps = dispatch => {
+  return {
+    onLogin: (credentials) => dispatch(Auth(credentials)),
 
-export default connect(null, null)(Login)
+  }
+}
+
+export default connect(null, mapDispatchToProps)(Login)

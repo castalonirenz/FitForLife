@@ -5,6 +5,7 @@ import {Theme} from '../themes/Theme'
 import Icon from 'react-native-vector-icons/Ionicons';
 import HomeScreen from "../views/HomeScreen";
 import ProfileScreen from '../views/Profile'
+import QRScreen from '../views/QRScreen'
 const TabNav = createBottomTabNavigator({
     Workout: {
 
@@ -35,7 +36,7 @@ const TabNav = createBottomTabNavigator({
     // }
     // ,
     qr: {
-        screen: HomeScreen,
+        screen: QRScreen,
         navigationOptions: {
             tabBarLabel: "Profile",
             tabBarIcon: ({ tintColor }) => (

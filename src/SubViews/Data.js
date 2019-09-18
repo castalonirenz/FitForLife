@@ -37,7 +37,6 @@ class SelectedExercise extends Component {
     _addData = (val) => {
 
         if(this.state.header === "exercise"){
-                console.log(tempArr, 'temp')
               if(Array.isArray(tempArr)){
                   if (tempArr.some(data => data.name === val.name)) {
 
@@ -157,7 +156,7 @@ class SelectedExercise extends Component {
                                 </View>
                                 {items.procedure.map((procedure, i) => (
                                     <View style={{ marginTop: 20, alignSelf: "flex-start" }}>
-                                        <Text>{procedure}</Text>
+                                        <Text style={Theme.NormalText}>{procedure}</Text>
                                     </View>
                                 ))}
                             </View>

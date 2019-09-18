@@ -22,8 +22,8 @@ class Header extends Component{
                         {/* <Icon name="ios-menu" size={RFPercentage(4)} color="#fff"/> */}
                     </TouchableWithoutFeedback>
                     <Text style={[Theme.HeaderText, {color:"#fff"}]}>{this.props.headerText}</Text>
-                   <TouchableOpacity onPress={this.props.NotificationPress}>
-                        {/* <Icon name={Platform.OS === "ios" ? "ios-notifications" : "md-notifications"} size={RFPercentage(3)} color="#fff" /> */}
+                   <TouchableOpacity onPress={this.props.iconPress}>
+                        <Icon name={this.props.iconName} size={RFPercentage(3)} color={this.props.iconColor} />
                    </TouchableOpacity>
                 </View>
             </View>

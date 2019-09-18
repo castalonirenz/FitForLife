@@ -13,7 +13,7 @@ export const Data = props => {
                 onPress={props.itemSelected.bind(null, items)}
                 style={[Theme.shadow,
                 {
-                    marginLeft: index >= 1 ? 10 : 0, height: height / 4,
+                    marginLeft: index >= 1 ? 10 : 0, height: height / 4, flexWrap:'wrap', padding: 10,
                     backgroundColor: "#fff", alignItems: "center", borderRadius: 10, marginTop: 10
                 }]}>
                 <Image

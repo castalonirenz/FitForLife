@@ -3,6 +3,7 @@ import HomeScreen from "../views/HomeScreen";
 import LoadingScreen from '../views/SplashScreen'
 import LoginScreen from '../views/Login'
 import DataScreen from '../SubViews/Data'
+import PreviewScreen from '../views/PreviewExercise'
 import { TabNavContainer } from "./TabNavigator";
 
 const StackNav = createStackNavigator({
@@ -11,6 +12,9 @@ const StackNav = createStackNavigator({
     },
     Data:{
         screen: DataScreen
+    },
+    Preview:{
+        screen: PreviewScreen
     }
 },{
     defaultNavigationOptions:{

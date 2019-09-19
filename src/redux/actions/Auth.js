@@ -14,9 +14,10 @@ export const Auth = (credentials) => {
                 dispatch(setInfo(response.data.data, response.data.logs))
                 return 'success'
             }
+            
         }))
         .catch(err => {
-           
+           alert(err)
         })
     }
 }

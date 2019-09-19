@@ -40,7 +40,7 @@ class Login extends Component {
         this.props.navigation.navigate('LoginSuccess')
         this.setState({loadingIndicator: false})
       }
-      else{
+      else if(response === "fail"){
         alert('invalid credentials')
         this.setState({loadingIndicator: false})
       }

@@ -10,15 +10,16 @@ export const Data = props => {
     if(data.length !== 0 || data !== undefined){
          dataComponent = data.map((items, index) => (
             <TouchableOpacity
+                key={index}
                 onPress={props.itemSelected.bind(null, items)}
                 style={[Theme.shadow,
                 {
-                    marginLeft: index >= 1 ? 10 : 0, height: height / 4, flexWrap:'wrap', padding: 10,
+                    marginLeft: index >= 1 ? 10 : 0, height: height / 3, padding: 10,
                     backgroundColor: "#fff", alignItems: "center", borderRadius: 10, marginTop: 10
                 }]}>
                 <Image
                     resizeMode="contain"
-                    style={{ width: width / 2, height: 150 }}
+                    style={{ width: width / 2, height: "90%" }}
                     source={items.image} />
                  <Text style={Theme.HeaderText}>{items.type}{items.name}</Text>
             </TouchableOpacity>

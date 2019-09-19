@@ -1,11 +1,11 @@
 export const exercise = [
     {
         type: "Abdominal",
-        image: require('../assets/exercise/Abdominal/LegRaise.jpg'),
+        image: {uri:'https://s0.gifyu.com/images/Abdominal5dbefe56077be16b.gif'},
        data: [
             {
                 name: "Ball Pull In",
-               image: require('../assets/exercise/Abdominal/BallPullin.jpg'),
+               image: {uri:'https://s0.gifyu.com/images/BallPullinef6ce32604301d2a.gif'},
                 procedure: [
                                 "1.	Place an exercise ball nearby and lay on the floor in front of it with your hands on the floor shoulder width apart in a push-up position.",
                                 "2.	Now place your lower shins on top of an exercise ball. Tip: At this point your legs should be fully extended with the shins on top of the ball and the upper body should be in a push-up type of position being supported by your two extended arms in front of you. This will be your starting position.",
@@ -17,11 +17,11 @@ export const exercise = [
             },
             {
                 name: "Cross Body Crunch",
-                image: require('../assets/exercise/Abdominal/CrossBodyCrunch.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/CrossBodyCrunchf8f7ac44b5ade957.gif'},
                 procedure:[
                     "1.	Lie flat on your back and bend your knees about 60 degrees.",
                     "2.	Keep your feet flat on the floor and place your hands loosely behind your head. This will be your starting position.",
-                    "3.	Now curl up and bring your right elbow and shoulder across your body while bring your left knee in toward your left shoulder at the same time. Reach with your elbow and try to touch your knee. Exhale as you perform this movement. Tip: Try to bring your shoulder up towards your knee rather than just your elbow and remember that the key is to contract the abs as you perform the movement; not just to move the elbow.",
+                    "3.	Now curi up and bring your right elbow and shoulder across your body while bring your left knee in toward your left shoulder at the same time. Reach with your elbow and try to touch your knee. Exhale as you perform this movement. Tip: Try to bring your shoulder up towards your knee rather than just your elbow and remember that the key is to contract the abs as you perform the movement; not just to move the elbow.",
                     "4.	Now go back down to the starting position as you inhale and repeat with the left elbow and the right knee.",
                     "5.	Continue alternating in this manner until all prescribed repetitions are done.",
                     "Variation: You can also do all of your repetitions for one side and then switch to the other side."
@@ -30,7 +30,7 @@ export const exercise = [
             },
             {
                 name: "Rope Crunch",
-                image: require('../assets/exercise/Abdominal/RopeCrunch.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/RopeCrunch7a694f5b40d6a243.gif'},
                 procedure:[
                     "1.	Kneel 1-2 feet in front of a cable system with a rope attached.",
                     "2.	After selecting an appropriate weight, grasp the rope with both hands reaching overhead. Your torso should be upright in the starting position.",
@@ -42,7 +42,7 @@ export const exercise = [
             },
             {
                 name: "Side Bridge",
-                image: require('../assets/exercise/Abdominal/SideBridge.png'),
+                image: {uri:'https://s0.gifyu.com/images/SideBridgeb5ff0d22ca7fa15b.gif'},
                 procedure:[
                     "Works your oblique’s and helps stabilize your spine. Lie on your side and support your body between your forearm and knee to your feet. Hold position for two to four seconds.",
                     "Repeat on the other side. Build up to at least 60 seconds on each side of your body!",
@@ -52,7 +52,7 @@ export const exercise = [
             },
             {
                 name: "Leg Raise",
-                image: require('../assets/exercise/Abdominal/LegRaise.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/LegRaisebc1266da61dee9aa.gif'},
                 procedure:[
                     "Start by lying down on the floor or a mat. Unfortunately, it gets tougher from here. Lay flat with your arms at your sides and legs stretched out next to each other, and then raise those legs. Even if you can’t hold them perfectly rigid, keep your legs as straight as possible, and lift them until they are pointing at the ceiling, or as near as you can get. Make sure your toes are pointed.",
                     "Then lower they back down, being careful to keep your movements measured. The return journey should be at the same pace at which you raised your legs. Lower them until they’re hovering just above the ground, and then raise them again. Shoot for three sets of 10 reps, or simply do as many raises as you can – keeping the pace steady – in a set time as part of a circuit.",
@@ -63,7 +63,7 @@ export const exercise = [
             },
             {
                 name: "Sit-Up Crunch",
-                image: require('../assets/exercise/Abdominal/SitUpCrunch.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/SitUpCrunch34be442d683c5f23.gif'},
                 procedure:[
                     "The crunches with legs on a bench are one of the most common abdominal exercises that isolates the abs muscles.",
                     "1. Lie on your back with your feet up on a bench, keeping your knees bent at a 90 degree angle, and placing your hands across your chest or on either side of your head.",
@@ -77,11 +77,11 @@ export const exercise = [
     },
     {
         type: "Back",
-        image: require('../assets/exercise/Back/Hyperextensions.jpg'),
+        image: {uri:'https://s0.gifyu.com/images/Back.gif'},
         data: [
             {
                 name: "Pull-Ups",
-                image: require('../assets/exercise/Back/Pull-Ups.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/Pull-Ups.gif'},
                 procedure: [
                                 "1.	Grab the pull-up bar with the palms facing forward using the prescribed grip. Note on grips: For a wide grip, your hands need to be spaced out at a distance wider than your shoulder width. For a medium grip, your hands need to be spaced out at a distance equal to your shoulder width and for a close grip at a distance smaller than your shoulder width.",
                                 "2.	As you have both arms extended in front of you holding the bar at the chosen grip width, bring your torso back around 30 degrees or so while creating a curvature on your lower back and sticking your chest out. This is your starting position.",
@@ -94,7 +94,7 @@ export const exercise = [
             },
             {
                 name: "Hyperextensions",
-                image: require('../assets/exercise/Back/Hyperextensions.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/Hyperextension.gif'},
                 procedure: [
                                 "1.	Lie face down on a hyperextension bench, tucking your ankles securely under the footpads.",
                                 "2.	Adjust the upper pad if possible so your upper thighs lie flat across the wide pad, leaving enough room for you to bend at the waist without any restriction.",
@@ -107,7 +107,7 @@ export const exercise = [
             },
             {
                 name: "Deadlift",
-                image: require('../assets/exercise/Back/Deadlift.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/Deadlift.gif'},
                 procedure: [
                                 "1.	Approach the bar so that it is centered over your feet. Your feet should be about hip-width apart. Bend at the hip to grip the bar at shoulder-width allowing your shoulder blades to protract. Typically, you would use an alternating grip.",
                                 "2.	With your feet and your grip set, take a big breath and then lower your hips and flex the knees until your shins contact the bar. Look forward with your head. Keep your chest up and your back arched, and begin driving through the heels to move the weight upward.",
@@ -118,7 +118,7 @@ export const exercise = [
             },
             {
                 name: "Wide Grip Lat Pulldown",
-                image: require('../assets/exercise/Back/WideGripLatPulldown.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/WideGripLatPulldown.gif'},
                 procedure: [
                                 "1.	Sit down on a pull-down machine with a wide bar attached to the top pulley. Make sure that you adjust the knee pad of the machine to fit your height. These pads will prevent your body from being raised by the resistance attached to the bar.",
                                 "2.	Grab the bar with the palms facing forward using the prescribed grip. Note on grips: For a wide grip, your hands need to be spaced out at a distance wider than shoulder width. For a medium grip, your hands need to be spaced out at a distance equal to your shoulder width and for a close grip at a distance smaller than your shoulder width.",
@@ -132,7 +132,7 @@ export const exercise = [
             },
             {
                 name: "Wide Grip Pulldown Behind The Neck",
-                image: require('../assets/exercise/Back/WideGripPullDownBehindTheNeck.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/WideGripPulldownBehindTheNeck.gif'},
                 procedure: [
                                 "1.	Sit down on a pull-down machine with a wide bar attached to the top pulley. Make sure that you adjust the knee pad of the machine to fit your height. These pads will prevent your body from being raised by the resistance attached to the bar.",
                                 "2.	Grab the bar with the palms facing forward using the prescribed grip. Note on grips: For a wide grip, your hands need to be spaced out at a distance wider than your shoulder width. For a medium grip, your hands need to be spaced out at a distance equal to your shoulder width and for a close grip at a distance smaller than your shoulder width.",
@@ -147,7 +147,7 @@ export const exercise = [
             },
             {
                 name: "Close Grip Front Lat Pulldown",
-                image: require('../assets/exercise/Back/CloseGripFrontLatPulldown.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/CloseGripFrontLatPulldown.gif'},
                 procedure: [
                                "1.	Sit down on a pull-down machine with a wide bar attached to the top pulley. Make sure that you adjust the knee pad of the machine to fit your height. These pads will prevent your body from being raised by the resistance attached to the bar.",
                                "2.	Grab the bar with the palms facing forward using the prescribed grip. Note on grips: For a wide grip, your hands need to be spaced out at a distance wider than your shoulder width. For a medium grip, your hands need to be spaced out at a distance equal to your shoulder width and for a close grip at a distance smaller than your shoulder width.",
@@ -160,7 +160,7 @@ export const exercise = [
             },
             {
                 name: "V-bar Pulldown",
-                image: require('../assets/exercise/Back/V-barPulldown.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/V-barPulldown.gif'},
                 procedure: [
                                "1.	Sit down on a pull-down machine with a V-Bar attached to the top pulley.",
                                "2.	Adjust the knee pad of the machine to fit your height. These pads will prevent your body from being raised by the resistance attached to the bar.",
@@ -174,7 +174,7 @@ export const exercise = [
             },
             {
                 name: "Underhand Cable Pulldown",
-                image: require('../assets/exercise/Back/UnderhandCablePulldown.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/UnderhandCablePulldown.gif'},
                 procedure: [
                               "1.	Sit down on a pull-down machine with a wide bar attached to the top pulley. Adjust the knee pad of the machine to fit your height. These pads will prevent your body from being raised by the resistance attached to the bar.",
                               "2.	Grab the pull-down bar with the palms facing your torso (a supinated grip). Make sure that the hands are placed closer than the shoulder width.",
@@ -187,7 +187,7 @@ export const exercise = [
             },
             {
                 name: "Straight Arm Pulldown",
-                image: require('../assets/exercise/Back/StraightArmPulldown.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/StraightArmPulldown.gif'},
                 procedure: [
                               "1.	You will start by grabbing the wide bar from the top pulley of a pulldown machine and using a wider than shoulder-width pronated (palms down) grip. Step backwards two feet or so.",
                               "2.	Bend your torso forward at the waist by around 30-degrees with your arms fully extended in front of you and a slight bend at the elbows. If your arms are not fully extended then you need to step a bit more backwards until they are. Once your arms are fully extended and your torso is slightly bent at the waist, tighten the lats and then you are ready to begin.",
@@ -200,7 +200,7 @@ export const exercise = [
             },
             {
                 name: "Bent Over Barbell Row",
-                image: require('../assets/exercise/Back/BentOverBarbellRow.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/BentOverBarbellRow.gif'},
                 procedure: [
                              "1.	Holding a barbell with a pronated grip (palms facing down), bend your knees slightly and bring your torso forward, by bending at the waist, while keeping the back straight until it is almost parallel to the floor. Tip: Make sure that you keep the head up. The barbell should hang directly in front of you as your arms hang perpendicular to the floor and your torso. This is your starting position.",
                              "2.	Now, while keeping the torso stationary, breathe out and lift the barbell to you. Keep the elbows close to the body and only use the forearms to hold the weight. At the top contracted position, squeeze the back muscles and hold for a brief pause.",
@@ -213,7 +213,7 @@ export const exercise = [
             },
             {
                 name: "T-Bar Row",
-                image: require('../assets/exercise/Back/T-BarRow.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/T-BarRow.gif'},
                 procedure: [
                              "1.	Position a bar into a landmine or in a corner to keep it from moving. Load an appropriate weight onto your end.",
                              "2.	Stand over the bar, and position a Double D row handle around the bar next to the collar. Using your hips and legs, rise to a standing position.",
@@ -225,7 +225,7 @@ export const exercise = [
             },
             {
                 name: "Seated Cable Row",
-                image: require('../assets/exercise/Back/SeatedCableRow.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/SeatedCableRow.gif'},
                 procedure: [
                             "1.	For this exercise you will need access to a low pulley row machine with a V-bar. Note: The V-bar will enable you to have a neutral grip where the palms of your hands face each other. To get into the starting position, first sit down on the machine and place your feet on the front platform or crossbar provided making sure that your knees are slightly bent and not locked.",
                             "2.	Lean over as you keep the natural alignment of your back and grab the V-bar handles.",
@@ -239,7 +239,7 @@ export const exercise = [
             },
             {
                 name: "One-Arm Dumbbell Row",
-                image: require('../assets/exercise/Back/One-ArmDumbbellRow.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/OneArmDumbbellRow.gif'},
                 procedure: [
                            "1.	Choose a flat bench and place a dumbbell on each side of it.",
                            "2.	Place the right leg on top of the end of the bench, bend your torso forward from the waist until your upper body is parallel to the floor, and place your right hand on the other end of the bench for support.",
@@ -256,14 +256,14 @@ export const exercise = [
     },
     {
         type: "Biceps",
-        image: require('../assets/exercise/Biceps/PreacherCurl.jpg'),
+        image: {uri:'https://s0.gifyu.com/images/Biceps.gif'},
         data: [
             {
-                name: "Dumbbell Alt. Biceps Curl",
-                image: require('../assets/exercise/Biceps/AlternateInclineDumbbellCurl.jpg'),
+                name: "Dumbbell Alt. Biceps Curi",
+                image: {uri:'https://s0.gifyu.com/images/DumbbellAltBicepsCuri.gif'},
                 procedure: [
                            "1.	Stand (torso upright) with a dumbbell in each hand held at arm’s length. The elbows should be close to the torso and the palms of your hand should be facing your thighs.",
-                           "2.	While holding the upper arm stationary, curl the right weight as you rotate the palm of the hands until they are facing forward. At this point continue contracting the biceps as you breathe out until your biceps is fully contracted and the dumbbells are at shoulder level. Hold the contracted position for a second as you squeeze the biceps. Tip: Only the forearms should move.",
+                           "2.	While holding the upper arm stationary, curi the right weight as you rotate the palm of the hands until they are facing forward. At this point continue contracting the biceps as you breathe out until your biceps is fully contracted and the dumbbells are at shoulder level. Hold the contracted position for a second as you squeeze the biceps. Tip: Only the forearms should move.",
                            "3.	Slowly begin to bring the dumbbell back to the starting position as your breathe in. Tip: Remember to twist the palms back to the starting position (facing your thighs) as you come down.",
                            "4.	Repeat the movement with the left hand. This equals one repetition.",
                            "5.	Continue alternating in this manner for the recommended amount of repetitions.",
@@ -271,34 +271,34 @@ export const exercise = [
                 ]
             },
             {
-                name: "Alternate Incline Dumbbell Curl",
-                image: require('../assets/exercise/Biceps/AlternateInclineDumbbellCurl.jpg'),
+                name: "Alternate Incline Dumbbell Curi",
+                image: {uri:'https://s0.gifyu.com/images/AlternateInclineDumbbellCuri.gif'},
                 procedure: [
                            "1.	Sit down on an incline bench with a dumbbell in each hand being held at arm’s length. Tip: Keep the elbows close to the torso. This will be your starting position.",
-                           "2.	While holding the upper arm stationary, curl the right weight forward while contracting the biceps as you breathe out. As you do so, rotate the hand so that the palm is facing up. Continue the movement until your biceps is fully contracted and the dumbbells are at shoulder level. Hold the contracted position for a second as you squeeze the biceps. Tip: Only the forearms should move.",
+                           "2.	While holding the upper arm stationary, curi the right weight forward while contracting the biceps as you breathe out. As you do so, rotate the hand so that the palm is facing up. Continue the movement until your biceps is fully contracted and the dumbbells are at shoulder level. Hold the contracted position for a second as you squeeze the biceps. Tip: Only the forearms should move.",
                            "3.	Slowly begin to bring the dumbbell back to starting position as your breathe in.",
                            "4.	Repeat the movement with the left hand. This equals one repetition.",
                            "5.	Continue alternating in this manner for the recommended amount of repetitions.",
                 ]
             },
             {
-                name: "Concentration Curls",
-                image: require('../assets/exercise/Biceps/ConcentrationCurls.jpg'),
+                name: "Concentration Curis",
+                image: {uri:'https://s0.gifyu.com/images/ConcentrationCruls.gif'},
                 procedure: [
                            "1.	Sit down on a flat bench with one dumbbell in front of you between your legs. Your legs should be spread with your knees bent and feet on the floor.",
                            "2.	Use your right arm to pick the dumbbell up. Place the back of your right upper arm on the top of your inner right thigh. Rotate the palm of your hand until it is facing forward away from your thigh. Tip: Your arm should be extended and the dumbbell should be above the floor. This will be your starting position.",
-                           "3.	While holding the upper arm stationary, curl the weights forward while contracting the biceps as you breathe out. Only the forearms should move. Continue the movement until your biceps are fully contracted and the dumbbells are at shoulder level. Tip: At the top of the movement make sure that the little finger of your arm is higher than your thumb. This guarantees a good contraction. Hold the contracted position for a second as you squeeze the biceps.",
+                           "3.	While holding the upper arm stationary, curi the weights forward while contracting the biceps as you breathe out. Only the forearms should move. Continue the movement until your biceps are fully contracted and the dumbbells are at shoulder level. Tip: At the top of the movement make sure that the little finger of your arm is higher than your thumb. This guarantees a good contraction. Hold the contracted position for a second as you squeeze the biceps.",
                            "4.	Slowly begin to bring the dumbbells back to starting position as your breathe in. Caution: Avoid swinging motions at any time.",
                            "5.	Repeat for the recommended amount of repetitions. Then repeat the movement with the left arm.",
                            "Variations: This exercise can be performed standing with the torso bent forward and the arm in front of you. In this case, no leg support is used for the back of your arm so you will need to make extra effort to ensure no movement of the upper arm. This is a more challenging version of the exercise and is not recommended for people with lower back issues.",
                 ]
             },
             {
-                name: "Wide Grip Barbell Curl",
-                image: require('../assets/exercise/Biceps/WideGripBarbellCurl.jpg'),
+                name: "Wide Grip Barbell Curi",
+                image: {uri:'https://s0.gifyu.com/images/WideGripBarbellCuri.gif'},
                 procedure: [
                            "1.	Stand up with your torso upright while holding a barbell at the wide outer handle. The palm of your hands should be facing forward. The elbows should be close to the torso. This will be your starting position.",
-                           "2.	While holding the upper arms stationary, curl the weights forward while contracting the biceps as you breathe out. Tip: Only the forearms should move.",
+                           "2.	While holding the upper arms stationary, curi the weights forward while contracting the biceps as you breathe out. Tip: Only the forearms should move.",
                            "3.	Continue the movement until your biceps are fully contracted and the bar is at shoulder level. Hold the contracted position for a second and squeeze the biceps hard.",
                            "4.	Slowly begin to bring the bar back to starting position as your breathe in.",
                            "5.	Repeat for the recommended amount of repetitions.",
@@ -306,23 +306,23 @@ export const exercise = [
                 ]
             },
             {
-                name: "Close Grip Barbell Curl",
-                image: require('../assets/exercise/Biceps/CloseGripBarbellCurl.jpg'),
+                name: "Close Grip Barbell Curi",
+                image: {uri:'https://s0.gifyu.com/images/CloseGripBarbellCuri.gif'},
                 procedure: [
                            "1.	Hold a barbell with both hands, palms up and a few inches apart.",
                            "2.	Stand with your torso straight and your head up. Your feet should be about shoulder width and your elbows close to your torso. This will be your starting position. Tip: You will keep your upper arms and elbows stationary throughout the movement.",
-                           "3.	Curl the bar up in a semi-circular motion until the forearms touch your biceps. Exhale as you perform this portion of the movement and contract your biceps hard for a second at the top. Tip: Avoid bending the back or using swinging motions as you lift the weight. Only the forearms should move.",
+                           "3.	Curi the bar up in a semi-circular motion until the forearms touch your biceps. Exhale as you perform this portion of the movement and contract your biceps hard for a second at the top. Tip: Avoid bending the back or using swinging motions as you lift the weight. Only the forearms should move.",
                            "4.	Slowly go back down to the starting position as you inhale.",
                            "5.	Repeat for the recommended amount of repetitions.",
                            "Variations: Can also be done with a medium or wide grip, using dumbbells and cables.",
                 ]
             },
             {
-                name: "EZ Bar Curl",
-                image: require('../assets/exercise/Biceps/EZBarCurl.jpg'),
+                name: "EZ Bar Curi",
+                image: {uri:'https://s0.gifyu.com/images/EZBarCuri.gif'},
                 procedure: [
-                          "1.	Stand up straight while holding an EZ curl bar at the wide outer handle. The palms of your hands should be facing forward and slightly tilted inward due to the shape of the bar. Keep your elbows close to your torso. This will be your starting position.",
-                          "2.	Now, while keeping your upper arms stationary, exhale and curl the weights forward while contracting the biceps. Focus on only moving your forearms.",
+                          "1.	Stand up straight while holding an EZ curi bar at the wide outer handle. The palms of your hands should be facing forward and slightly tilted inward due to the shape of the bar. Keep your elbows close to your torso. This will be your starting position.",
+                          "2.	Now, while keeping your upper arms stationary, exhale and curi the weights forward while contracting the biceps. Focus on only moving your forearms.",
                           "3.	Continue to raise the weight until your biceps are fully contracted and the bar is at shoulder level. Hold the top contracted position for a moment and squeeze the biceps.",
                           "4.	Then inhale and slowly lower the bar back to the starting position.",
                           "5.	Repeat for the recommended amount of repetitions.",
@@ -331,24 +331,24 @@ export const exercise = [
                 ]
             },
             {
-                name: "Biceps Cable Curl",
-                image: require('../assets/exercise/Biceps/BicepsCableCurl.jpg'),
+                name: "Biceps Cable Curi",
+                image: {uri:'https://s0.gifyu.com/images/BicepsCableCuri.gif'},
                 procedure: [
-                           "1.	Stand up with your torso upright while holding a cable curl bar that is attached to a low pulley. Grab the cable bar at shoulder width and keep the elbows close to the torso. The palm of your hands should be facing up (supinated grip). This will be your starting position.",
-                           "2.	While holding the upper arms stationary, curl the weights while contracting the biceps as you breathe out. Only the forearms should move. Continue the movement until your biceps are fully contracted and the bar is at shoulder level. Hold the contracted position for a second as you squeeze the muscle.",
-                           "3.	Slowly begin to bring the curl bar back to starting position as your breathe in.",
+                           "1.	Stand up with your torso upright while holding a cable curi bar that is attached to a low pulley. Grab the cable bar at shoulder width and keep the elbows close to the torso. The palm of your hands should be facing up (supinated grip). This will be your starting position.",
+                           "2.	While holding the upper arms stationary, curi the weights while contracting the biceps as you breathe out. Only the forearms should move. Continue the movement until your biceps are fully contracted and the bar is at shoulder level. Hold the contracted position for a second as you squeeze the muscle.",
+                           "3.	Slowly begin to bring the curi bar back to starting position as your breathe in.",
                            "4.	Repeat for the recommended amount of repetitions.",
                            "Variation: You can also perform this movement using an E-Z barbell attachment or single handles.",
 
                 ]
             },
             {
-                name: "One Arm Cable Curl",
-                image: require('../assets/exercise/Biceps/OneArmCableCurl.jpg'),
+                name: "One Arm Cable Curi",
+                image: {uri:'https://s0.gifyu.com/images/OneArmCableCuri.gif'},
                 procedure: [
                            "1.	Start out by grabbing single handle next to the low pulley machine. Make sure you are far enough from the machine so that your arm is supporting the weight.",
                            "2.	Make sure that your upper arm is stationary, perpendicular to the floor with elbows in and palms facing forward. Your non lifting arm should be grabbing your waist. This will allow you to keep your balance.",
-                           "3.	Slowly begin to curl the single handle upwards while keeping the upper arm stationary until your forearm touches your bicep while exhaling. Tip: Only the forearm should move.",
+                           "3.	Slowly begin to curi the single handle upwards while keeping the upper arm stationary until your forearm touches your bicep while exhaling. Tip: Only the forearm should move.",
                            "4.	Hold the contraction position as you squeeze the bicep and then lower the single handle back down to the starting position as you inhale.",
                            "5.	Repeat for the recommended amount of repetitions.",
                            "6.	Switch arms while performing this exercise.",
@@ -356,8 +356,8 @@ export const exercise = [
                 ]
             },
             {
-                name: "Cable Hammer Curls Rope",
-                image: require('../assets/exercise/Biceps/CableHammerCurlsRope.jpg'),
+                name: "Cable Hammer Curis Rope",
+                image: {uri:'https://s0.gifyu.com/images/CableHammerCurisRope.gif'},
                 procedure: [
                            "1.	Attach a rope attachment to a low pulley and stand facing the machine about 12 inches away from it.",
                            "2.	Grasp the rope with a neutral (palms-in) grip and stand straight up keeping the natural arch of the back and your torso stationary.",
@@ -370,8 +370,8 @@ export const exercise = [
                 ]
             },
             {
-                name: "Overhead Cable Curl",
-                image: require('../assets/exercise/Biceps/OverheadCableCurl.jpg'),
+                name: "Overhead Cable Curi",
+                image: {uri:'https://s0.gifyu.com/images/OverheadCableCuri.gif'},
                 procedure: [
                           "1.	To begin, set a weight that is comfortable on each side of the pulley machine. Note: Make sure that the amount of weight selected is the same on each side.",
                           "2.	Now adjust the height of the pulleys on each side and make sure that they are positioned at a height higher than that of your shoulders.",
@@ -384,13 +384,13 @@ export const exercise = [
                 ]
             },
             {
-                name: "Preacher Curl",
-                image: require('../assets/exercise/Biceps/PreacherCurl.jpg'),
+                name: "Preacher Curi",
+                image: {uri:'https://s0.gifyu.com/images/PeacherCuri.gif'},
                 procedure: [
-                          "1.	To perform this movement you will need a preacher bench and an E-Z bar. Grab the E-Z curl bar at the close inner handle (either have someone hand you the bar which is preferable or grab the bar from the front bar rest provided by most preacher benches). The palm of your hands should be facing forward and they should be slightly tilted inwards due to the shape of the bar.",
-                          "2.	With the upper arms positioned against the preacher bench pad and the chest against it, hold the E-Z Curl Bar at shoulder length. This will be your starting position.",
+                          "1.	To perform this movement you will need a preacher bench and an E-Z bar. Grab the E-Z curi bar at the close inner handle (either have someone hand you the bar which is preferable or grab the bar from the front bar rest provided by most preacher benches). The palm of your hands should be facing forward and they should be slightly tilted inwards due to the shape of the bar.",
+                          "2.	With the upper arms positioned against the preacher bench pad and the chest against it, hold the E-Z Curi Bar at shoulder length. This will be your starting position.",
                           "3.	As you breathe in, slowly lower the bar until your upper arm is extended and the biceps is fully stretched.",
-                          "4.	As you exhale, use the biceps to curl the weight up until your biceps is fully contracted and the bar is at shoulder height. Squeeze the biceps hard and hold this position for a second.",
+                          "4.	As you exhale, use the biceps to curi the weight up until your biceps is fully contracted and the bar is at shoulder height. Squeeze the biceps hard and hold this position for a second.",
                           "5.	Repeat for the recommended amount of repetitions.",
                           "Variations: You can perform this exercise also using a low pulley with an E-Z Bar attachment instead. In this case you will need to position the bench in front of the pulley. You may also use a wider grip for variety purposes.",
 
@@ -400,11 +400,11 @@ export const exercise = [
     },
     {
         type: "Calves",
-        image: require('../assets/exercise/Calves/SeatedCalfRaise.jpg'),
+        image: {uri:'https://s0.gifyu.com/images/Calves.gif'},
         data: [
             {
                 name: "Seated Calf Raise",
-                image: require('../assets/exercise/Calves/SeatedCalfRaise.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/SeatedCalfRaise.gif'},
                 procedure: [
                            "1.	Sit on the machine and place your toes on the lower portion of the platform provided with the heels extending off. Choose the toe positioning of your choice (forward, in, or out) as per the beginning of this chapter.",
                            "2.	Place your lower thighs under the lever pad, which will need to be adjusted according to the height of your thighs. Now place your hands on top of the lever pad in order to prevent it from slipping forward.",
@@ -417,7 +417,7 @@ export const exercise = [
             },
             {
                 name: "Calf Press Leg Press Machine",
-                image: require('../assets/exercise/Calves/CalfPressLegPressMachine.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/CalfPressLegPressMachine.gif'},
                 procedure: [
                            "1.	Using a leg press machine, sit down on the machine and place your legs on the platform directly in front of you at a medium (shoulder width) foot stance.",
                            "2.	Lower the safety bars holding the weighted platform in place and press the platform all the way up until your legs are fully extended in front of you without locking your knees. (Note: In some leg press units you can leave the safety bars on for increased safety. If your leg press unit allows for this, then this is the preferred method of performing the exercise.) Your torso and the legs should make perfect 90-degree angle. Now carefully place your toes and balls of your feet on the lower portion of the platform with the heels extending off. Toes should be facing forward, outwards or inwards as described at the beginning of the chapter. This will be your starting position.",
@@ -434,11 +434,11 @@ export const exercise = [
     ,
     {
         type: "Chest",
-        image: require('../assets/exercise/Chest/Butterfly.jpg'),
+        image: {uri:'https://s0.gifyu.com/images/Chest.gif'},
         data: [
             {
                 name: "Incline Dumbbell Flyes",
-                image: require('../assets/exercise/Chest/InclineDumbbellFly.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/InclineDumbellFlyes.gif'},
                 procedure: [
                            "1.	Hold a dumbbell on each hand and lie on an incline bench that is set to an incline angle of no more than 30 degrees.",
                            "2.	Extend your arms above you with a slight bend at the elbows.",
@@ -452,7 +452,7 @@ export const exercise = [
             },
             {
                 name: "Butterfly",
-                image: require('../assets/exercise/Chest/InclineDumbbellFly.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/Butterfly.gif'},
                 procedure: [
                            "1.	Sit on the machine with your back flat on the pad.",
                            "2.	Take hold of the handles. Tip: Your upper arms should be positioned parallel to the floor; adjust the machine accordingly. This will be your starting position.",
@@ -465,7 +465,7 @@ export const exercise = [
             },
             {
                 name: "Cable Crossover",
-                image: require('../assets/exercise/Chest/CableCrossover.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/CableCrossover.gif'},
                 procedure: [
                            "1.	To get yourself into the starting position, place the pulleys on a high position (above your head), select the resistance to be used and hold the pulleys in each hand.",
                            "2.	Step forward in front of an imaginary straight line between both pulleys while pulling your arms together in front of you. Your torso should have a small forward bend from the waist. This will be your starting position.",
@@ -478,7 +478,7 @@ export const exercise = [
             },
             {
                 name: "Chest Dips",
-                image: require('../assets/exercise/Chest/ChestDips.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/ChestDip.gif'},
                 procedure: [
                            "1.	For this exercise you will need access to parallel bars. To get yourself into the starting position, hold your body at arm’s length (arms locked) above the bars.",
                            "2.	While breathing in, lower yourself slowly with your torso leaning forward around 30 degrees or so and your elbows flared out slightly until you feel a slight stretch in the chest.",
@@ -489,7 +489,7 @@ export const exercise = [
             },
             {
                 name: "Barbell Bench Press",
-                image: require('../assets/exercise/Chest/BarbellBenchPress.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/BarbellBenchPress.gif'},
                 procedure: [
                           "1.	Lie back on a flat bench. Using a medium width grip (a grip that creates a 90-degree angle in the middle of the movement between the forearms and the upper arms), lift the bar from the rack and hold it straight over you with your arms locked. This will be your starting position.",
                           "2.	From the starting position, breathe in and begin coming down slowly until the bar touches your middle chest.",
@@ -502,7 +502,7 @@ export const exercise = [
             },
             {
                 name: "Barbell Incline Bench Press",
-                image: require('../assets/exercise/Chest/BarbellInclineBenchPress.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/BarbellInclineBenchPress.gif'},
                 procedure: [
                            "1.	Load the bar to an appropriate weight for your training.",
                            "2.	Lay on the bench with your feet flat on the ground, driving through to your hips. Your back should be arched, and your shoulder blades retracted.",
@@ -514,7 +514,7 @@ export const exercise = [
             },
             {
                 name: "Barbell Decline Bench Press",
-                image: require('../assets/exercise/Chest/BarbellDeclineBenchPress.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/BarbellDeclineBenchPress.gif'},
                 procedure: [
                            "1.	Secure your legs at the end of the decline bench and slowly lay down on the bench.",
                            "2.	Using a medium width grip (a grip that creates a 90-degree angle in the middle of the movement between the forearms and the upper arms), lift the bar from the rack and hold it straight over you with your arms locked. The arms should be perpendicular to the floor. This will be your starting position. Tip: In order to protect your rotator cuff, it is best if you have a spotter help you lift the barbell off the rack.",
@@ -529,7 +529,7 @@ export const exercise = [
             },
             {
                 name: "Dumbbell Bench Press",
-                image: require('../assets/exercise/Chest/DumbbellBenchPress.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/DumbellBenchPress.gif'},
                 procedure: [
                            "1.	Lie down on a flat bench with a dumbbell in each hand resting on top of your thighs. The palms of your hands will be facing each other.",
                            "2.	Then, using your thighs to help raise the dumbbells up, lift the dumbbells one at a time so that you can hold them in front of you at shoulder width.",
@@ -543,7 +543,7 @@ export const exercise = [
             },
             {
                 name: "Barbell Pullover",
-                image: require('../assets/exercise/Chest/BarbellPullover.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/BarbellPullover.gif'},
                 procedure: [
                            "1.	Lie on a flat bench with a barbell using a shoulder grip width.",
                            "2.	Hold the bar straight over your chest with a bend in your arms. This will be your starting position.",
@@ -558,27 +558,27 @@ export const exercise = [
     },
     {
         type: "Harmstring",
-        image: require('../assets/exercise/Harmstring/RomanianDeadlift.jpg'),
+        image: {uri:'https://s0.gifyu.com/images/Harmstring.gif'},
         data: [
             {
-                name: "Standing Leg Curl",
-                image: require('../assets/exercise/Harmstring/StandingLegCurl.jpg'),
+                name: "Standing Leg Curi",
+                image: {uri:'https://s0.gifyu.com/images/StandingLegCuri.gif'},
                 procedure: [
                            "1.	Adjust the machine lever to fit your height and lie with your torso bent at the waist facing forward around 30-45 degrees (since an angled position is more favorable for hamstrings recruitment) with the pad of the lever on the back of your right leg (just a few inches under the calves) and the front of the right leg on top of the machine pad.",
                            "2.	Keeping the torso bent forward, ensure your leg is fully stretched and grab the side handles of the machine. Position your toes straight. This will be your starting position.",
-                           "3.	As you exhale, curl your right leg up as far as possible without lifting the upper leg from the pad. Once you hit the fully contracted position, hold it for a second.",
+                           "3.	As you exhale, curi your right leg up as far as possible without lifting the upper leg from the pad. Once you hit the fully contracted position, hold it for a second.",
                            "4.	As you inhale, bring the legs back to the initial position. Repeat for the recommended amount of repetitions.",
                            "5.	Perform the same exercise now for the left leg.",
 
                 ]
             },
             {
-                name: "Lying Leg Curl",
-                image: require('../assets/exercise/Harmstring/LyingLegCurl.jpg'),
+                name: "Lying Leg Curi",
+                image: {uri:'https://s0.gifyu.com/images/LyingLegCuri.gif'},
                 procedure: [
-                           "1.	Adjust the machine lever to fit your height and lie face down on the leg curl machine with the pad of the lever on the back of your legs (just a few inches under the calves). Tip: Preferably use a leg curl machine that is angled as opposed to flat since an angled position is more favorable for hamstrings recruitment.",
+                           "1.	Adjust the machine lever to fit your height and lie face down on the leg curi machine with the pad of the lever on the back of your legs (just a few inches under the calves). Tip: Preferably use a leg curi machine that is angled as opposed to flat since an angled position is more favorable for hamstrings recruitment.",
                            "2.	Keeping the torso flat on the bench, ensure your legs are fully stretched and grab the side handles of the machine. Position your toes straight (or you can also use any of the other two stances described on the foot positioning section). This will be your starting position.",
-                           "3.	As you exhale, curl your legs up as far as possible without lifting the upper legs from the pad. Once you hit the fully contracted position, hold it for a second.",
+                           "3.	As you exhale, curi your legs up as far as possible without lifting the upper legs from the pad. Once you hit the fully contracted position, hold it for a second.",
                            "4.	As you inhale, bring the legs back to the initial position. Repeat for the recommended amount of repetitions.",
                            "Caution: Do not ever use so much weight on the exercise that you start using swinging and jerking as you can risk both lower back injury and also a hamstring injury.",
                            "Variations: Since you have three foot positions you have in reality three exercises. The movement can also be performed with a dumbbell held in between your feet (a partner needs to place it properly). This latter exercise though is only suitable for advanced trainees. Finally, it is also possible to just use one leg at a time for better isolation.",
@@ -587,7 +587,7 @@ export const exercise = [
             },
             {
                 name: "Romanian Deadlift",
-                image: require('../assets/exercise/Harmstring/RomanianDeadlift.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/RomanianDeadlift.gif'},
                 procedure: [
                            "1.	Hold a bar at hip level with a pronated (palms facing down) grip. Your shoulders should be back, you’re back arched, and your knees slightly bent. This will be your starting position.",
                            "2.	Lower the bar by moving your butt back as far as you can. Keep the bar close to your body, your head looking forward, and your shoulders back. Done correctly, you should reach the maximum range of your hamstring flexibility just below the knee. Any further movement will be compensation and should be avoided for this movement.",
@@ -599,11 +599,11 @@ export const exercise = [
     },
     {
         type: "Oblique",
-        image: require('../assets/exercise/Oblique/DumbbellSideBend.jpg'),
+        image: {uri:'https://s0.gifyu.com/images/Oblique.jpg'},
         data: [
             {
                 name: "Encogimientos Oblicuos Fitball",
-                image: require('../assets/exercise/Oblique/EncogimientosOblicuosFitball.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/EncogimientosOblicuosFitball.gif'},
                 procedure: [
                            "1.	Start out by lying on your right side with your legs lying on top of each other. Make sure your knees are bent a little bit.",
                            "2.	Place your left hand behind your head.",
@@ -616,7 +616,7 @@ export const exercise = [
             },
             {
                 name: "Dumbbell Side Bend",
-                image: require('../assets/exercise/Oblique/DumbbellSideBend.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/DumbbellSideBend.gif'},
                 procedure: [
                            "1.	Stand up straight while holding a dumbbell on the left hand (palms facing the torso) as you have the right hand holding your waist. Your feet should be placed at shoulder width. This will be your starting position.",
                            "2.	While keeping your back straight and your head up, bend only at the waist to the right as far as possible. Breathe in as you bend to the side. Then hold for a second and come back up to the starting position as you exhale. Tip: Keep the rest of the body stationary.",
@@ -628,8 +628,8 @@ export const exercise = [
                 ]
             },
             {
-                name: "Side Briidge",
-                image: require('../assets/exercise/Oblique/SideBridge.png'),
+                name: "Side Bridge",
+                image: {uri:'https://s0.gifyu.com/images/SideBridge7cc212bf1865b2e4.gif'},
                 procedure: [
                           "Works your obliques and helps stabilize your spine. Lie on your side and support your body between your forearm and knee to your feet. Hold position for two to four seconds.",
                           "Repeat on the other side. Build up to at least 60 seconds on each side of your body!",
@@ -640,11 +640,11 @@ export const exercise = [
     ,
     {
         type: "Quadriceps",
-        image: require('../assets/exercise/Quadriceps/BarbellLunge.jpg'),
+        image: {uri:'https://s0.gifyu.com/images/Quadriceps.gif'},
         data: [
             {
                 name: "Leg Extensions",
-                image: require('../assets/exercise/Quadriceps/LegExtensions.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/LegExtension.gif'},
                 procedure: [
                            "1.	For this exercise you will need to use a leg extension machine. First choose your weight and sit on the machine with your legs under the pad (feet pointed forward) and the hands holding the side bars. This will be your starting position. Tip: You will need to adjust the pad so that it falls on top of your lower leg (just above your feet). Also, make sure that your legs form a 90-degree angle between the lower and upper leg. If the angle is less than 90-degrees then that means the knee is over the toes which in turn creates undue stress at the knee joint. If the machine is designed that way, either look for another machine or just make sure that when you start executing the exercise you stop going down once you hit the 90-degree angle.",
                            "2.	Using your quadriceps, extend your legs to the maximum as you exhale. Ensure that the rest of the body remains stationary on the seat. Pause a second on the contracted position.",
@@ -655,7 +655,7 @@ export const exercise = [
             },
             {
                 name: "Leg Press",
-                image: require('../assets/exercise/Quadriceps/LegPress.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/LegPress.gif'},
                 procedure: [
                            "1.	Using a leg press machine, sit down on the machine and place your legs on the platform directly in front of you at a medium (shoulder width) foot stance. (Note: For the purposes of this discussion we will use the medium stance described above which targets overall development; however you can choose any of the three stances described in the foot positioning section).",
                            "2.	Lower the safety bars holding the weighted platform in place and press the platform all the way up until your legs are fully extended in front of you. Tip: Make sure that you do not lock your knees. Your torso and the legs should make a perfect 90-degree angle. This will be your starting position.",
@@ -668,7 +668,7 @@ export const exercise = [
             },
             {
                 name: "One Leg Barbell Squat",
-                image: require('../assets/exercise/Quadriceps/OneLegBarbellSquat.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/OneLegBarbellSquat.gif'},
                 procedure: [
                            "1.	Start by standing about 2 to 3 feet in front of a flat bench with your back facing the bench. Have a barbell in front of you on the floor. Tip: Your feet should be shoulder width apart from each other.",
                            "2.	Bend the knees and use a pronated grip with your hands being wider than shoulder width apart from each other to lift the barbell up until you can rest it on your chest.",
@@ -683,7 +683,7 @@ export const exercise = [
             },
             {
                 name: "Squat",
-                image: require('../assets/exercise/Quadriceps/Squat.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/Squat.gif'},
                 procedure: [
                            "1.	Begin with the barbell supported on top of the traps. The chest should be up and the head facing forward. Adopt a hip-width stance with the feet turned out as needed.",
                            "2.	Descend by flexing the knees, refraining from moving the hips back as much as possible. This requires that the knees travel forward. Ensure that they stay align with the feet. The goal is to keep the torso as upright as possible.",
@@ -693,21 +693,7 @@ export const exercise = [
             },
             {
                 name: "Barbell Lunge",
-                image: require('../assets/exercise/Quadriceps/BarbellLunge.jpg'),
-                procedure: [
-                           "1.	This exercise is best performed inside a squat rack for safety purposes. To begin, first set the bar on a rack just below shoulder level. Once the correct height is chosen and the bar is loaded, step under the bar and place the back of your shoulders (slightly below the neck) across it.",
-                           "2.	Hold on to the bar using both arms at each side and lift it off the rack by first pushing with your legs and at the same time straightening your torso.",
-                           "3.	Step away from the rack and step forward with your right leg and squat down through your hips, while keeping the torso upright and maintaining balance. Inhale as you go down. Note: Do not allow your knee to go forward beyond your toes as you come down, as this will put undue stress on the knee joint.",
-                           "4.	Using mainly the heel of your foot, push up and go back to the starting position as you exhale.",
-                           "5.	Repeat the movement for the recommended amount of repetitions and then perform with the left leg.",
-                           "Caution: This is a movement that requires a great deal of balance so if you suffer from balance problems you may wish to either avoid it or just use your own bodyweight while holding on to a fixed object. Definitely never perform with a barbell on your back if you suffer from balance issues.",
-                           "Variations: There are several ways to perform the exercise. One way is to alternate each leg. For instance do one repetition with the right, then the left, then the right and so on.",
-
-                ]
-            },
-            {
-                name: "Barbell Lunge",
-                image: require('../assets/exercise/Quadriceps/BarbellLunge.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/BarbellLunge.gif'},
                 procedure: [
                            "1.	This exercise is best performed inside a squat rack for safety purposes. To begin, first set the bar on a rack just below shoulder level. Once the correct height is chosen and the bar is loaded, step under the bar and place the back of your shoulders (slightly below the neck) across it.",
                            "2.	Hold on to the bar using both arms at each side and lift it off the rack by first pushing with your legs and at the same time straightening your torso.",
@@ -724,11 +710,11 @@ export const exercise = [
     ,
     {
         type: "Shoulder",
-        image: require('../assets/exercise/Shoulder/BarbellPressBehindBack.jpg'),
+        image: {uri:'https://s0.gifyu.com/images/Shoulder.gif'},
         data: [
             {
                 name: "Lateral Raise",
-                image: require('../assets/exercise/Shoulder/LateralRise.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/LateralRaise.gif'},
                 procedure: [
                            "1.	Pick a couple of dumbbells and stand with a straight torso and the dumbbells by your side at arm’s length with the palms of the hand facing you. This will be your starting position.",
                            "2.	While maintaining the torso in a stationary position (no swinging), lift the dumbbells to your side with a slight bend on the elbow and the hands slightly tilted forward as if pouring water in a glass. Continue to go up until your arms are parallel to the floor. Exhale as you execute this movement and pause for a second at the top.",
@@ -740,7 +726,7 @@ export const exercise = [
             },
             {
                 name: "Bent Over Low- Pulley Side Lateral",
-                image: require('../assets/exercise/Shoulder/BentOverLow-PulleySideLateral.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/BentOverLow-PulleySideLateral.gif'},
                 procedure: [
                            "1.	Select a weight and hold the handle of the low pulley with your right hand.",
                            "2.	Bend at the waist until your torso is nearly parallel to the floor. Your legs should be slightly bent with your left hand placed on your lower left thigh. Your right arm should be hanging from your shoulder in front of you and with a slight bend at the elbow. This will be your starting position.",
@@ -753,7 +739,7 @@ export const exercise = [
             },
             {
                 name: "Barbell Shrug Behind Back",
-                image: require('../assets/exercise/Shoulder/BarbellShrugBehindBack.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/BarbellShrugBehindBack.gif'},
                 procedure: [
                            "1.	Stand up straight with your feet at shoulder width as you hold a barbell with both hands behind your back using a pronated grip (palms facing back). Tip: Your hands should be a little wider than shoulder width apart. You can use wrist wraps for this exercise for better grip. This will be your starting position.",
                            "2.	Raise your shoulders up as far as you can go as you breathe out and hold the contraction for a second. Tip: Refrain from trying to lift the barbell by using your biceps. The arms should remain stretched out at all times.",
@@ -765,7 +751,7 @@ export const exercise = [
             },
             {
                 name: "Front Dumbbell Raise",
-                image: require('../assets/exercise/Shoulder/FrontDumbbellRaise.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/FrontDumbbellRaise.gif'},
                 procedure: [
                            "1.	Pick a couple of dumbbells and stand with a straight torso and the dumbbells on front of your thighs at arm’s length with the palms of the hand facing your thighs. This will be your starting position.",
                            "2.	While maintaining the torso stationary (no swinging), lift the left dumbbell to the front with a slight bend on the elbow and the palms of the hands always facing down. Continue to go up until you arm is slightly above parallel to the floor. Exhale as you execute this portion of the movement and pause for a second at the top. Inhale after the second pause.",
@@ -777,7 +763,7 @@ export const exercise = [
             },
             {
                 name: "Standing Low-Pulley Deltoid Raise",
-                image: require('../assets/exercise/Shoulder/Standing.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/StandingLow-PulleyDeltoidRaise.gif'},
                 procedure: [
                            "1.	Start by standing to the right side of a low pulley row. Use your left hand to come across the body and grab a single handle attached to the low pulley with a pronated grip (palms facing down). Rest your arm in front of you. Your right hand should grab the machine for better support and balance.",
                            "2.	Make sure that your back is erect and your feet are shoulder width apart from each other. This is the starting position.",
@@ -790,7 +776,7 @@ export const exercise = [
             },
             {
                 name: "Dumbbell Lying Rear Raise",
-                image: require('../assets/exercise/Shoulder/DumbellLyingRearRaise.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/DumbbellLyingRearRaise.gif'},
                 procedure: [
                            "1.	While holding a dumbbell in each hand, lay with your chest down on a slightly inclined (around 15 degrees when measured from the floor) adjustable bench.",
                            "2.	Position the palms of the hands in a neutral manner (palms facing your torso) as you keep the arms extended with the elbows slightly bent. This will be your starting position.",
@@ -803,7 +789,7 @@ export const exercise = [
             },
             {
                 name: "Seated Dumbbell Press",
-                image: require('../assets/exercise/Shoulder/SeatedDumbbellPress.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/SeatedDumbbellPress.gif'},
                 procedure: [
                            "1.	Grab a couple of dumbbells and sit on a military press bench or a utility bench that has a back support on it as you place the dumbbells upright on top of your thighs.",
                            "2.	Clean the dumbbells up one at a time by using your thighs to bring the dumbbells up to shoulder height at each side.",
@@ -817,7 +803,7 @@ export const exercise = [
             },
             {
                 name: "Seated Military Press",
-                image: require('../assets/exercise/Shoulder/SeatedMilitaryPress.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/SeatedMilitaryPress.gif'},
                 procedure: [
                           "1.	Sit on a Military Press Bench with a bar behind your head and either have a spotter give you the bar (better on the rotator cuff this way) or pick it up yourself carefully with a pronated grip (palms facing forward). Tip: Your grip should be wider than shoulder width and it should create a 90-degree angle between the forearm and the upper arm as the barbell goes down.",
                           "2.	Once you pick up the barbell with the correct grip length, lift the bar up over your head by locking your arms. Hold at about shoulder level and slightly in front of your head. This is your starting position.",
@@ -830,7 +816,7 @@ export const exercise = [
             },
             {
                 name: "Barbell Press Behind Back",
-                image: require('../assets/exercise/Shoulder/BarbellPressBehindBack.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/BarbellPressBehindBack.gif'},
                 procedure: [
                            "1.	This exercise is best performed inside a squat rack for easier pick up of the bar. To begin, first set the bar on a rack that best matches your height. Once the correct height is chosen and the bar is loaded, step under the bar and place the back of your shoulders (slightly below the neck) across it.",
                            "2.	Hold on to the bar using both arms at each side and lift it off the rack by first pushing with your legs and at the same time straightening your torso.",
@@ -844,7 +830,7 @@ export const exercise = [
             },
             {
                 name: "Upright Barbell Row",
-                image: require('../assets/exercise/Shoulder/UprightBarbellRow.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/UprightBarbellRow.gif'},
                 procedure: [
                            "1.	Grasp a barbell with an overhand grip that is slightly less than shoulder width. The bar should be resting on the top of your thighs with your arms extended and a slight bend in your elbows. Your back should also be straight. This will be your starting position.",
                            "2.	Now exhale and use the sides of your shoulders to lift the bar, raising your elbows up and to the side. Keep the bar close to your body as you raise it. Continue to lift the bar until it nearly touches your chin. Tip: Your elbows should drive the motion, and should always be higher than your forearms. Remember to keep your torso stationary and pause for a second at the top of the movement.",
@@ -859,11 +845,11 @@ export const exercise = [
     ,
     {
         type: "Triceps",
-        image: require('../assets/exercise/Triceps/Dips.jpg'),
+        image: {uri:'https://s0.gifyu.com/images/Triceps.gif'},
         data: [
             {
                 name: "Reverse Grip PushDown",
-                image: require('../assets/exercise/Triceps/ReverseGripPushDown.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/ReverseGripPushDown.gif'},
                 procedure: [
                            "1.	Start by setting a bar attachment (straight or e-z) on a high pulley machine.",
                            "2.	Facing the bar attachment, grab it with the palms facing up (supinated grip) at shoulder width. Lower the bar by using your lats until your arms are fully extended by your sides. Tip: Elbows should be in by your sides and your feet should be shoulder width apart from each other. This is the starting position.",
@@ -876,7 +862,7 @@ export const exercise = [
             },
             {
                 name: "Kneeling Cable Triceps Extension",
-                image: require('../assets/exercise/Triceps/KneelingCableTricepsExtension.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/KneelingCableTricepsExtension.gif'},
                 procedure: [
                            "1.	Place a bench sideways in front of a high pulley machine.",
                            "2.	Hold a straight bar attachment above your head with your hands about 6 inches apart with your palms facing down.",
@@ -891,7 +877,7 @@ export const exercise = [
             },
             {
                 name: "Triceps Pushdown V-bar",
-                image: require('../assets/exercise/Triceps/TricepsPushdownV-bar.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/TricepPushdownV-bar.gif'},
                 procedure: [
                            "1.	Attach a V-Bar to a high pulley and grab with an overhand grip (palms facing down) at shoulder width.",
                            "2.	Standing upright with the torso straight and a very small inclination forward, bring the upper arms close to your body and perpendicular to the floor. The forearms should be pointing up towards the pulley as they hold the bar. The thumbs should be higher than the small finger. This is your starting position.",
@@ -904,7 +890,7 @@ export const exercise = [
             },
             {
                 name: "Triceps Pushdown Rope",
-                image: require('../assets/exercise/Triceps/TricepsPushdownRope.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/TricepPushdownRope.gif'},
                 procedure: [
                            "1.	Attach a rope attachment to a high pulley and grab with a neutral grip (palms facing each other).",
                            "2.	Standing upright with the torso straight and a very small inclination forward, bring the upper arms close to your body and perpendicular to the floor. The forearms should be pointing up towards the pulley as they hold the rope with the palms facing each other. This is your starting position.",
@@ -917,7 +903,7 @@ export const exercise = [
             },
             {
                 name: "Dumbbell Triceps Extension",
-                image: require('../assets/exercise/Triceps/DumbbellTricepsExtension.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/DumbbellTricepsExtension.gif'},
                 procedure: [
                            "1.	To begin, stand up with a dumbbell held by both hands. Your feet should be about shoulder width apart from each other. Slowly use both hands to grab the dumbbell and lift it over your head until both arms are fully extended.",
                            "2.	The resistance should be resting in the palms of your hands with your thumbs around it. The palm of the hands should be facing up towards the ceiling. This will be your starting position.",
@@ -930,7 +916,7 @@ export const exercise = [
             },
             {
                 name: "One-Arm Dumbbell Triceps Extension",
-                image: require('../assets/exercise/Triceps/One-ArmDumbbellTricepsExtension.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/One-ArmDumbbellTricepExtension.gif'},
                 procedure: [
                            "1.	Grab a dumbbell and either sit on a military press bench or a utility bench that has a back support on it as you place the dumbbells upright on top of your thighs or stand up straight.",
                            "2.	Clean the dumbbell up to bring it to shoulder height and then extend the arm over your head so that the whole arm is perpendicular to the floor and next to your head. The dumbbell should be on top of you. The other hand can be kept fully extended to the side, by the waist, supporting the upper arm that has the dumbbell or grabbing a fixed surface.",
@@ -944,7 +930,7 @@ export const exercise = [
             },
             {
                 name: "Dips",
-                image: require('../assets/exercise/Triceps/Dips.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/Dips.gif'},
                 procedure: [
                            "1.	To get into the starting position, hold your body at arm's length with your arms nearly locked above the bars.",
                            "2.	Now, inhale and slowly lower yourself downward. Your torso should remain upright and your elbows should stay close to your body. This helps to better focus on tricep involvement. Lower yourself until there is a 90 degree angle formed between the upper arm and forearm.",
@@ -956,7 +942,7 @@ export const exercise = [
             },
             {
                 name: "Triceps Dumbbell Kickbacks",
-                image: require('../assets/exercise/Triceps/TricepsDumbbellKickback.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/TricepsDumbbellKickback.gif'},
                 procedure: [
                            "1.	Start with a dumbbell in each hand and your palms facing your torso. Keep your back straight with a slight bend in the knees and bend forward at the waist. Your torso should be almost parallel to the floor. Make sure to keep your head up. Your upper arms should be close to your torso and parallel to the floor. Your forearms should be pointed towards the floor as you hold the weights. There should be a 90-degree angle formed between your forearm and upper arm. This is your starting position.",
                            "2.	Now, while keeping your upper arms stationary, exhale and use your triceps to lift the weights until the arm is fully extended. Focus on moving the forearm.",
@@ -968,9 +954,9 @@ export const exercise = [
             },
             {
                 name: "Barbell Triceps Extension",
-                image: require('../assets/exercise/Triceps/BarbellTricepsExtension.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/BarbellTricepsExtension.gif'},
                 procedure: [
-                           "1.	While holding a barbell or EZ Curl bar with a pronated grip (palms facing forward), lie on your back on a flat bench with your head close to the end of the bench. Tip: If you are holding a barbell grab it using a shoulder-width grip and if you are using an E-Z Bar grab it on the inner handles.",
+                           "1.	While holding a barbell or EZ Curi bar with a pronated grip (palms facing forward), lie on your back on a flat bench with your head close to the end of the bench. Tip: If you are holding a barbell grab it using a shoulder-width grip and if you are using an E-Z Bar grab it on the inner handles.",
                            "2.	Extend your arms in front of you and slowly bring the bar back in a semi circular motion (while keeping the arms extended) to a position over your head. At the end of this step your arms should be overhead and perpendicular to the floor. This will be your starting position. Tip: Keep your elbows in at all times.",
                            "3.	As you inhale, lower the bar by bending at the elbows and while keeping the upper arm stationary. Keep lowering the bar until your forearms are perpendicular to the floor.",
                            "4.	As you exhale bring the bar back up to the starting position by pushing the bar up in a semi-circular motion until the lower arms are also parallel to the floor. Contract the triceps hard at the top of the movement for a second. Tip: Again, only the forearms should move. The upper arms should remain stationary at all times.",
@@ -981,7 +967,7 @@ export const exercise = [
             },
             {
                 name: "Pronated Triceps Extension",
-                image: require('../assets/exercise/Triceps/PronatedTricepsExtension.jpg'),
+                image: {uri:'https://s0.gifyu.com/images/PronatedTricepsExtension.gif'},
                 procedure: [
                            "1.	Lie flat on a bench while holding a dumbbell at arm’s length. Your arm should be perpendicular to your body. The palm of your hand should be facing towards your feet as a pronated grip is required to perform this exercise.",
                            "2.	Place your non lifting hand on your bicep for support.",

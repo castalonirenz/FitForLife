@@ -132,7 +132,7 @@ class PreviewExercise extends Component {
           // headerText={this.state.dataList.type}
           ImageStyle={[Theme.iconSize, { tintColor: "#fff" }]}
           ImageSource={require('../assets/icon/back.png')} />
-        <ScrollView>
+        <ScrollView contentContainerStyle={{flexGrow: 1}}>
           <View style={{ flex: 1, alignItems: "center", marginTop: 10 }}>
             <View style={[Theme.shadow, { width: "90%", backgroundColor: "#fff", padding: 10, borderRadius: 10 }]}>
               <Image

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, ScrollView, Image, NetInfo, StyleSheet, Dimensions, ActivityIndicator, KeyboardAvoidingView, Platform, SafeAreaView } from 'react-native';
+import { View, Text, ScrollView, Image, Alert, StyleSheet, Dimensions, ActivityIndicator, KeyboardAvoidingView, Platform, SafeAreaView } from 'react-native';
 import { Theme } from "../themes/Theme";
 import { Touchable, Input } from "../components/index";
 import { RFPercentage, RFPercentageValue } from 'react-native-responsive-fontsize';
@@ -41,7 +41,27 @@ class Login extends Component {
         this.setState({loadingIndicator: false})
       }
       else if(response === "fail"){
-        alert('invalid credentials')
+        Alert.alert(
+          'Log in failed',
+          'Please check your credentials',
+          [
+            {text: 'OK',
+            onPress:()=> this.setState({loadingIndicator: false})},
+          ],
+          {cancelable: false},
+        );
+        this.setState({loadingIndicator: false})
+      }
+      else if(response === "expired"){
+        Alert.alert(
+          'Log in failed',
+          'Account already expired, please renew your account. Proceed to the frontdesk',
+          [
+            {text: 'OK',
+            onPress:()=> this.setState({loadingIndicator: false})},
+          ],
+          {cancelable: false},
+        );
         this.setState({loadingIndicator: false})
       }
     })

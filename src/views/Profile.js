@@ -14,7 +14,7 @@ class Profile extends Component {
     }
 
     _selectedData = (header, data) => {
-        console.log(header, data)
+        
 
         this.props.navigation.navigate('Preview', {
             data: data,
@@ -70,6 +70,7 @@ class Profile extends Component {
                 />
                 <ScrollView
                     showsVerticalScrollIndicator={false}
+                    contentContainerStyle={{flexGrow: 1}}
                 >
                     <View style={{ flex: 1, width: "100%", marginTop: 20 }}>
                         <View style={{ padding: 20, flexDirection: "row" }}>
@@ -95,7 +96,7 @@ class Profile extends Component {
                             <View style={{ padding: 20, paddingTop: 0 }}>
                                 {exerciseEmpty}
                                 <Data
-                                    parentStyle={{ flexDirection: 'row', backgrondColor: "red" }}
+                                    parentStyle={{ flexDirection: 'row' }}
                                     data={this.props.ExerciseList}
                                     itemSelected={this._selectedData.bind(this, 'exercise')} />
                             </View>
@@ -120,8 +121,8 @@ class Profile extends Component {
                             </View>
 
                         </ScrollView>
-                        <View style={[Theme.shadow,{width:"90%", alignSelf:"center", padding: 10, backgroundColor:"#fff"}]}>
-                            <View style={{ flexDirection: "row", width: "100%", borderBottomWidth: 1, justifyContent: "space-around", padding: 10 }}>
+                        <View style={[Theme.shadow,{flex: 1,width:"90%", alignSelf:"center", padding: 10, backgroundColor:"#fff", marginBottom: 5, borderRadius: 5}]}>
+                            <View style={{ flexDirection: "row", width: "100%", borderBottomWidth: 1, justifyContent: "space-around", padding: 10, }}>
                                 <Text style={Theme.HeaderText}>log date</Text>
                                 <Text style={Theme.HeaderText}>log in</Text>
                                 <Text style={Theme.HeaderText}>log out</Text>

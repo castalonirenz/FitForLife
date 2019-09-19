@@ -126,8 +126,10 @@ class SelectedExercise extends Component {
                     headerText={this.state.dataList.type}
                     ImageStyle={[Theme.iconSize, { tintColor: "#fff" }]}
                     ImageSource={require('../assets/icon/back.png')} />
-                <ScrollView showsVerticalScrollIndicator={false}>
-                    <View style={{ flex: 1, alignItems: "center" }}>
+                <ScrollView
+                        contentContainerStyle={{flexGrow: 1}} 
+                        showsVerticalScrollIndicator={false}>
+                    <View style={{ flex: 1, alignItems: "center", marginBottom: 10 }}>
                         {this.state.dataList.data.map((items, key) => (
                             < View
                                 // onPress={props.exerciseSelected.bind(null, items)}

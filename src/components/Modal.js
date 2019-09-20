@@ -43,15 +43,14 @@ export const ModalPass = props => (
         <Root>
             <View style={{ backgroundColor: "rgba(0,0,0,0.8)", flex: 1, alignItems: "center", justifyContent: "center" }}>
                 <View style={{ flex: 1, backgroundColor: "#fff", width: width, alignItems: "center", justifyContent: "center" }}>
-                    <TouchableOpacity onPress={props.Cancel} style={{ alignItems: "center", justifyContent: "center", alignSelf: "flex-start", marginLeft: 20 }}>
-                        <Icon name="ios-close" color="#000" size={RF(6)} />
-                        {/* <Touchable TouchablePress={props.Cancel} TouchableStyle={{ backgroundColor: "#e0301e" }}>
-                            Cancel
-                        </Touchable> */}
-                    </TouchableOpacity>
+                  
 
                     <KeyboardAvoidingView behavior="padding" style={{ width: "90%", alignItems: "center" }}>
                         <Text style={Theme.HeaderText}>Change Password</Text>
+                        <Input
+                            onChangeText={props.onChangUsername} value={props.username}
+                            placeholder="Username" InputStyle={props.oldPassStyle} />
+                        <Text style={[Theme.NormalText, { color: "#e0301e" }]}>{props.currentPassError}</Text>
                         <Input
                             onChangeText={props.onChangeOld} value={props.valueOld}
                             secureTextEntry={true} placeholder="Old password" InputStyle={props.oldPassStyle} />

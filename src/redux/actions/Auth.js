@@ -10,7 +10,7 @@ export const Auth = (credentials) => {
             password: credentials.password
         })
         .then((response => {
-          
+        //   console.log(response.data.data.first_time)
             if(response.data.status !== "Invalid Credentials"){
                 let sssss = "27-18-2021"
                 let expDate = response.data.data.cust_expdate
@@ -24,15 +24,24 @@ export const Auth = (credentials) => {
                 var b = moment([expDateYear, expDateMonth,expDateDay])
                 var c = moment(['2019', "09", "18"])
                 // console.log(a.diff(c, 'years', true))
-
+                let firstTime = response.data.data.first_time !== undefined ? response.data.data.first_time : 1
                 let diff = b.diff(a, 'years', true)
                 if(  diff <= 0){
                   
                     return 'expired'
                 }
+                // else if(response.data.data.first_time === 0){
+                //     return 'change'
+                // }
+                else if (firstTime == 0){
+                    // dispatch(setInfo(response.data.data, response.data.logs))
+                         return 'change'
+                 
+       
+                }
                 else{
-                    dispatch(setInfo(response.data.data, response.data.logs))
-                    return 'success'
+                                dispatch(setInfo(response.data.data, response.data.logs))
+                        return 'success'
                 }
                 
             }

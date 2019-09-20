@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import { View, Text, ScrollView, Image, Alert, StyleSheet, Dimensions, ActivityIndicator, KeyboardAvoidingView, Platform, SafeAreaView } from 'react-native';
 import { Theme } from "../themes/Theme";
-import { Touchable, Input } from "../components/index";
+import { Touchable, Input, ModalPass } from "../components/index";
 import { RFPercentage, RFPercentageValue } from 'react-native-responsive-fontsize';
 import Icon from 'react-native-vector-icons/Ionicons'
 import { Formik, Field } from "formik";
 import { Auth } from "../redux/actions/Auth";
 import * as Yup from "yup";
+import axios from 'axios'
 import { connect } from "react-redux"
+import { apiUrl } from '../utils/url';
 const Dimension = Dimensions.get('window').width
 
 class Login extends Component {
@@ -17,7 +19,8 @@ class Login extends Component {
 
   state = {
     remember: false,
-    loadingIndicator: false
+    loadingIndicator: false,
+    showChangePass: false
   }
 
   initialValues = {
@@ -25,46 +28,50 @@ class Login extends Component {
     password: ""
   };
 
-  
+
 
   _onLogin = (values) => {
-    //     uuid
-    //     model
-    //     brand
-    //     platform
-    //     serial
-    this.setState({loadingIndicator: true})
+
+    this.setState({ loadingIndicator: true })
     this.props.onLogin(values)
-    .then(response => {
-      if(response === "success"){
-        this.props.navigation.navigate('LoginSuccess')
-        this.setState({loadingIndicator: false})
-      }
-      else if(response === "fail"){
-        Alert.alert(
-          'Log in failed',
-          'Please check your credentials',
-          [
-            {text: 'OK',
-            onPress:()=> this.setState({loadingIndicator: false})},
-          ],
-          {cancelable: false},
-        );
-        this.setState({loadingIndicator: false})
-      }
-      else if(response === "expired"){
-        Alert.alert(
-          'Log in failed',
-          'Account already expired, please renew your account. Proceed to the frontdesk',
-          [
-            {text: 'OK',
-            onPress:()=> this.setState({loadingIndicator: false})},
-          ],
-          {cancelable: false},
-        );
-        this.setState({loadingIndicator: false})
-      }
-    })
+      .then(response => {
+        console.log(response)
+        if (response === "success") {
+          this.props.navigation.navigate('LoginSuccess')
+          this.setState({ loadingIndicator: false })
+        }
+        else if (response === 'change') {
+          this.setState({ showChangePass: true })
+        }
+        else if (response === "fail") {
+          Alert.alert(
+            'Log in failed',
+            'Please check your credentials',
+            [
+              {
+                text: 'OK',
+                onPress: () => this.setState({ loadingIndicator: false })
+              },
+            ],
+            { cancelable: false },
+          );
+          this.setState({ loadingIndicator: false })
+        }
+        else if (response === "expired") {
+          Alert.alert(
+            'Log in failed',
+            'Account already expired, please renew your account. Proceed to the frontdesk',
+            [
+              {
+                text: 'OK',
+                onPress: () => this.setState({ loadingIndicator: false })
+              },
+            ],
+            { cancelable: false },
+          );
+          this.setState({ loadingIndicator: false })
+        }
+      })
     // this.props.navigation.navigate('LoginSuccess')
 
   }
@@ -80,6 +87,55 @@ class Login extends Component {
     //   this.props.articlesData()
     // }
   }
+
+  _changePass = () => {
+    if (this.state.username === undefined || this.state.username === "") {
+      alert('username is required')
+    }
+    if (this.state.old === undefined || this.state.old === "") {
+      alert('password is required')
+    }
+    if (this.state.new === undefined || this.state.new === "") {
+      alert('new password is required')
+    }
+    if (this.state.confirm === undefined || this.state.confirm === "") {
+      alert('confirmation password is required')
+    }
+  else{
+      axios.post(apiUrl + 'api/changePass', {
+        username: this.state.username,
+        password: this.state.old,
+        new_password: this.state.new,
+        confirm_password: this.state.confirm
+      })
+        .then((response => {
+          console.log(response)
+          if (response.data.success) {
+         
+            Alert.alert(
+              'Hoooooray!',
+              response.data.message,
+              [
+                {
+                  text: 'OK',
+                  onPress: () => {
+                    this.setState({ showChangePass: false })
+                    this.props.navigation.navigate('LoginSuccess')
+                  }
+                },
+              ],
+              { cancelable: false },
+            );
+          }
+          else if(response.data.success === false)
+            // console.log(response.data.message)
+            alert(response.data.message)
+        }))
+        .catch(err => {
+          console.log(err)
+        })
+  }
+  }
   render() {
     let logo
     let connectionStatus
@@ -90,6 +146,15 @@ class Login extends Component {
     return (
       <SafeAreaView style={{ flex: 1, backgroundColor: "#fff" }}>
         {/* <OfflineContainer /> */}
+        <ModalPass
+          onChangUsername={(val) => this.setState({ username: val })}
+          onChangeOld={(val) => this.setState({ old: val })}
+          onChangeNew={(val) => this.setState({ new: val })}
+          onChangeConfirm={(val) => this.setState({ confirm: val })}
+          Change={this._changePass}
+          visible={this.state.showChangePass}
+          onRequestClose={() => this.setState({ showChangePass: false })}
+        />
         <Image source={require('../assets/icon/logo.jpg')} resizeMode="contain" style={{ height: RFPercentage(7.0), width: RFPercentage(7), alignSelf: "flex-end", marginRight: 20, marginTop: 10 }} />
         <ScrollView style={{ width: "100%" }} contentContainerStyle={{ flexGrow: 1 }}>
           <Formik
@@ -121,7 +186,7 @@ class Login extends Component {
                     <Input
                       keyboardType="email-address"
                       placeholderTextColor={"gray"}
-                      InputStyle={[Theme.shadow,styles.inputs, {elevation: 1}]}
+                      InputStyle={[Theme.shadow, styles.inputs, { elevation: 1 }]}
                       onChangeText={handleChange("username")}
                       value={values.username}
                       name="username"
@@ -139,7 +204,7 @@ class Login extends Component {
                     <Input
                       //onEndEditing={handleSubmit}
                       returnKeyType="go"
-                      InputStyle={[Theme.shadow,styles.inputs, {elevation: 1}]}
+                      InputStyle={[Theme.shadow, styles.inputs, { elevation: 1 }]}
                       onChangeText={handleChange("password")}
                       placeholderTextColor={"gray"}
                       secureTextEntry={true}
@@ -159,17 +224,17 @@ class Login extends Component {
 
                   <View style={{ flexDirection: "row", width: "100%", justifyContent: "center", marginTop: 30 }}>
                     <View style={{ width: "45%", marginRight: 20 }}>
-                      <Touchable 
-                        TouchableStyle={{borderRadius: 5}}
+                      <Touchable
+                        TouchableStyle={{ borderRadius: 5 }}
                         TouchablePress={handleSubmit}
-                          // TouchablePress={()=>this.props.navigation.navigate('Home')}
+                        // TouchablePress={()=>this.props.navigation.navigate('Home')}
                         TextStyle={{ fontSize: RFPercentage(2.0) }}>
                         Login
                      </Touchable>
-                     
+
                     </View>
 
-                  
+
                   </View>
 
 

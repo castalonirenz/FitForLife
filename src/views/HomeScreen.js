@@ -16,6 +16,10 @@ class HomeScreen extends Component {
   componentWillMount() {
   }
 
+  componentDidMount(){
+    console.log(this.props.Credentials)
+  }
+
   _selectedData = (header, data) => {
     // 
     this.props.navigation.navigate('Data', {
@@ -86,7 +90,8 @@ class HomeScreen extends Component {
 
 const mapStateToProps = state => {
   return {
-    ExerciseList: state.DataList.exercise
+    ExerciseList: state.DataList.exercise,
+    Credentials: state.Auth.credentials
   }
 }
 

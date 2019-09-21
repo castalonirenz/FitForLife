@@ -76,6 +76,7 @@ export const Theme = StyleSheet.create({
             width: 0,
             height: 2,
         },
+        backgroundColor:"#fff",
         shadowOpacity: 0.25,
         shadowRadius: 3.84,
 

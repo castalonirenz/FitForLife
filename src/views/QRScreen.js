@@ -19,7 +19,8 @@ class QRScreen extends Component {
         let username = this.props.credentials.cust_username
         let regdate = this.props.credentials.cust_regdate
         let expdate = this.props.credentials.cust_expdate
-        let code = id + firstname + lastname + username + regdate + expdate
+        let code = id + "\n" + firstname + "\n" + lastname + "\n" + username + "\n" + regdate + "\n"  + expdate
+        console.log(code)
         return (
             <SafeAreaView style={{ flex: 1 }}>
                 <HeaderComponent
@@ -27,7 +28,7 @@ class QRScreen extends Component {
                 />
                 <View style={{ alignSelf: "center", marginTop: 20 }}>
                     <QRCode
-                        value={code}
+                        value={code !== undefined ? code : 'none'}
                         size={height / 3}
                     />
                 </View>

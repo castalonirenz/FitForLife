@@ -47,21 +47,22 @@ export const ModalPass = props => (
 
                     <KeyboardAvoidingView behavior="padding" style={{ width: "90%", alignItems: "center" }}>
                         <Text style={Theme.HeaderText}>Change Password</Text>
+
                         <Input
                             onChangeText={props.onChangUsername} value={props.username}
-                            placeholder="Username" InputStyle={props.oldPassStyle} />
+                            placeholder="Username" InputStyle={[Theme.shadow,props.oldPassStyle, {marginTop: 20}]} />
                         <Text style={[Theme.NormalText, { color: "#e0301e" }]}>{props.currentPassError}</Text>
                         <Input
                             onChangeText={props.onChangeOld} value={props.valueOld}
-                            secureTextEntry={true} placeholder="Old password" InputStyle={props.oldPassStyle} />
+                            secureTextEntry={true} placeholder="Old password" InputStyle={[Theme.shadow,props.oldPassStyle]} />
                         <Text style={[Theme.NormalText, { color: "#e0301e" }]}>{props.currentPassError}</Text>
                         <Input
                             onChangeText={props.onChangeNew} value={props.valueNew}
-                            secureTextEntry={true} placeholder="New password" InputStyle={props.newPassStyle} />
+                            secureTextEntry={true} placeholder="New password" InputStyle={[props.newPassStyle, Theme.shadow]} />
                         <Text style={[Theme.NormalText, { color: "#e0301e" }]}>{props.newPassError}</Text>
                         <Input
                             onChangeText={props.onChangeConfirm} value={props.valueConfirm}
-                            secureTextEntry={true} placeholder="Confirm password" InputStyle={props.confirmPassStyle} />
+                            secureTextEntry={true} placeholder="Confirm password" InputStyle={[props.confirmPassStyle, Theme.shadow]} />
                         <Text style={[Theme.NormalText, { color: "#e0301e" }]}>{props.confirmPassError}</Text>
                     </KeyboardAvoidingView>
 

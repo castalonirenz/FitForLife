@@ -143,7 +143,7 @@ class SelectedExercise extends Component {
                                     }]} >
                                 <Image
                                     resizeMode="stretch"
-                                    style={{ width: "100%", height: 200 }}
+                                    style={{ width: "100%", height: 200, backgroundColor:"#c5c5c5" }}
                                     source={items.image} />
                                 <View style={{ width: "100%", flexDirection: "row", justifyContent: "space-between", padding: 10, alignItems: "center" }}>
                                     <Text style={[Theme.HeaderText, { fontWeight: "bold" }]}>{items.name}</Text>

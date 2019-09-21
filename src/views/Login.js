@@ -157,6 +157,10 @@ class Login extends Component {
         />
         <Image source={require('../assets/icon/logo.jpg')} resizeMode="contain" style={{ height: RFPercentage(7.0), width: RFPercentage(7), alignSelf: "flex-end", marginRight: 20, marginTop: 10 }} />
         <ScrollView style={{ width: "100%" }} contentContainerStyle={{ flexGrow: 1 }}>
+          <Image source={require('../assets/icon/gymlogo.jpg')} 
+          resizeMode="stretch" 
+          style={{ height: RFPercentage(25.0), width: RFPercentage(40),  borderRadius: 10,alignSelf:"center", marginTop: 20 }} />
+
           <Formik
             initialValues={this.initialValues}
             onSubmit={this._onLogin}
@@ -175,7 +179,7 @@ class Login extends Component {
               touched,
               resetForm
             }) => (
-                <KeyboardAvoidingView behavior="padding" behavior="padding" enabled style={{ flex: 1, width: "100%", marginTop: "40%" }}>
+                <KeyboardAvoidingView behavior="padding" behavior="padding" enabled style={{ flex: 1, width: "100%", marginTop: 20 }}>
 
 
                   <View style={{ flexDirection: "row", alignItems: "center" }}>

@@ -562,7 +562,7 @@ export const exercise = [
         data: [
             {
                 name: "Standing Leg Curi",
-                image: {uri:'https://s0.gifyu.com/images/StandingLegCuri.gif'},
+                image: {uri:'https://s0.gifyu.com/images/StandingLegCurl.gif'},
                 procedure: [
                            "1.	Adjust the machine lever to fit your height and lie with your torso bent at the waist facing forward around 30-45 degrees (since an angled position is more favorable for hamstrings recruitment) with the pad of the lever on the back of your right leg (just a few inches under the calves) and the front of the right leg on top of the machine pad.",
                            "2.	Keeping the torso bent forward, ensure your leg is fully stretched and grab the side handles of the machine. Position your toes straight. This will be your starting position.",
@@ -574,7 +574,7 @@ export const exercise = [
             },
             {
                 name: "Lying Leg Curi",
-                image: {uri:'https://s0.gifyu.com/images/LyingLegCuri.gif'},
+                image: {uri:'https://s0.gifyu.com/images/LyingLegCurl.gif'},
                 procedure: [
                            "1.	Adjust the machine lever to fit your height and lie face down on the leg curi machine with the pad of the lever on the back of your legs (just a few inches under the calves). Tip: Preferably use a leg curi machine that is angled as opposed to flat since an angled position is more favorable for hamstrings recruitment.",
                            "2.	Keeping the torso flat on the bench, ensure your legs are fully stretched and grab the side handles of the machine. Position your toes straight (or you can also use any of the other two stances described on the foot positioning section). This will be your starting position.",

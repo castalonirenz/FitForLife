@@ -34,7 +34,7 @@ export const Auth = (credentials) => {
                 //     return 'change'
                 // }
                 else if (firstTime == 0){
-                    // dispatch(setInfo(response.data.data, response.data.logs))
+                         dispatch(setInfo(response.data.data, response.data.logs))
                          return 'change'
                  
        

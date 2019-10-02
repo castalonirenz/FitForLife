@@ -48,10 +48,10 @@ export const ModalPass = props => (
                     <KeyboardAvoidingView behavior="padding" style={{ width: "90%", alignItems: "center" }}>
                         <Text style={Theme.HeaderText}>Change Password</Text>
 
-                        <Input
+                        {/* <Input
                             onChangeText={props.onChangUsername} value={props.username}
                             placeholder="Username" InputStyle={[Theme.shadow,props.oldPassStyle, {marginTop: 20}]} />
-                        <Text style={[Theme.NormalText, { color: "#e0301e" }]}>{props.currentPassError}</Text>
+                        <Text style={[Theme.NormalText, { color: "#e0301e" }]}>{props.currentPassError}</Text> */}
                         <Input
                             onChangeText={props.onChangeOld} value={props.valueOld}
                             secureTextEntry={true} placeholder="Old password" InputStyle={[Theme.shadow,props.oldPassStyle]} />

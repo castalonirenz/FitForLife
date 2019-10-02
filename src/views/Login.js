@@ -89,9 +89,6 @@ class Login extends Component {
   }
 
   _changePass = () => {
-    if (this.state.username === undefined || this.state.username === "") {
-      alert('username is required')
-    }
     if (this.state.old === undefined || this.state.old === "") {
       alert('password is required')
     }
@@ -103,7 +100,7 @@ class Login extends Component {
     }
   else{
       axios.post(apiUrl + 'api/changePass', {
-        username: this.state.username,
+        username: this.props.credentials.length !== 0 ? this.props.credentials.cust_username : null,
         password: this.state.old,
         new_password: this.state.new,
         confirm_password: this.state.confirm
@@ -137,6 +134,7 @@ class Login extends Component {
   }
   }
   render() {
+    console.log(this.props.credentials)
     let logo
     let connectionStatus
     let loadingIndicator
@@ -147,7 +145,7 @@ class Login extends Component {
       <SafeAreaView style={{ flex: 1, backgroundColor: "#fff" }}>
         {/* <OfflineContainer /> */}
         <ModalPass
-          onChangUsername={(val) => this.setState({ username: val })}
+          // onChangUsername={(val) => this.setState({ username: val })}
           onChangeOld={(val) => this.setState({ old: val })}
           onChangeNew={(val) => this.setState({ new: val })}
           onChangeConfirm={(val) => this.setState({ confirm: val })}
@@ -256,6 +254,12 @@ const styles = StyleSheet.create({
   }
 })
 
+const mapStateToProps = state => {
+  return{
+    credentials: state.Auth.credentials
+  }
+}
+
 
 const mapDispatchToProps = dispatch => {
   return {
@@ -264,4 +268,4 @@ const mapDispatchToProps = dispatch => {
   }
 }
 
-export default connect(null, mapDispatchToProps)(Login)
+export default connect(mapStateToProps, mapDispatchToProps)(Login)

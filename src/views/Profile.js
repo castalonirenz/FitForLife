@@ -84,7 +84,7 @@ class Profile extends Component {
                         </View>
 
                         <View style={{ marginLeft: 20 }}>
-                            <Text style={Theme.HeaderText}>Save Exercise</Text>
+                            <Text style={Theme.HeaderText}>Saved Exercise</Text>
                         </View>
                         <ScrollView
                             snapToInterval={width}
@@ -103,7 +103,7 @@ class Profile extends Component {
 
                         </ScrollView>
                         <View style={{ marginLeft: 20 }}>
-                            <Text style={Theme.HeaderText}>Save Nutrition</Text>
+                            <Text style={Theme.HeaderText}>Saved Nutrition Diet</Text>
                         </View>
                         <ScrollView
                             snapToInterval={width}

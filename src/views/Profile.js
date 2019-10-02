@@ -83,44 +83,7 @@ class Profile extends Component {
 
                         </View>
 
-                        <View style={{ marginLeft: 20 }}>
-                            <Text style={Theme.HeaderText}>Saved Exercise</Text>
-                        </View>
-                        <ScrollView
-                            snapToInterval={width}
-                            decelerationRate="fast"
-                            snapToAlignment={'center'}
-                            showsHorizontalScrollIndicator={false}
-                            horizontal={true}>
-
-                            <View style={{ padding: 20, paddingTop: 0 }}>
-                                {exerciseEmpty}
-                                <Data
-                                    parentStyle={{ flexDirection: 'row' }}
-                                    data={this.props.ExerciseList}
-                                    itemSelected={this._selectedData.bind(this, 'exercise')} />
-                            </View>
-
-                        </ScrollView>
-                        <View style={{ marginLeft: 20 }}>
-                            <Text style={Theme.HeaderText}>Saved Nutrition Diet</Text>
-                        </View>
-                        <ScrollView
-                            snapToInterval={width}
-                            decelerationRate="fast"
-                            snapToAlignment={'center'}
-                            showsHorizontalScrollIndicator={false}
-                            horizontal={true}>
-
-                            <View style={{ padding: 20, paddingTop: 0 }}>
-                                {nutritionEmpty}
-                                <Data
-                                    parentStyle={{ flexDirection: 'row', backgrondColor: "red" }}
-                                    data={this.props.NutritionList}
-                                    itemSelected={this._selectedData.bind(this, 'nutrition')} />
-                            </View>
-
-                        </ScrollView>
+                 
                         <View style={[Theme.shadow,{flex: 1,width:"90%", alignSelf:"center", padding: 10, backgroundColor:"#fff", marginBottom: 5, borderRadius: 5}]}>
                             <View style={{ flexDirection: "row", width: "100%", borderBottomWidth: 1, justifyContent: "space-around", padding: 10, }}>
                                 <Text style={Theme.HeaderText}>log date</Text>

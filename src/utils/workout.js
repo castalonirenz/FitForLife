@@ -1,12 +1,12 @@
 export const workout = [
     {
         type: "Beginner 2 DAYS WORKOUT",
-        image: {url:'https://s3.gifyu.com/images/Beginner118c530bd6ae688d.jpg'},
-       data = [
+        image: {uri :'https://s3.gifyu.com/images/Beginner118c530bd6ae688d.jpg'},
+        details:[
             {
                 name: "Beginner 2 DAYS WORKOUT",
                 training_level: "Beginner",
-                image: {url: "lagay ka ng link dito same sa taas"},
+                image: {uri : "lagay ka ng link dito same sa taas"},
                 meal_plan: 
                 {
                    key: 2, 
@@ -26,6 +26,8 @@ export const workout = [
 
                 ]
             },
+        ],
+       data :[
             {
                 name: "Day 1",
                 image: null,
@@ -100,12 +102,12 @@ export const workout = [
     },
     {
         type: "Beginner 3 DAYS WORKOUT",
-        image: {url:'https://s3.gifyu.com/images/Beginner118c530bd6ae688d.jpg'},
-        data = [
+        image: {uri :'https://s3.gifyu.com/images/Beginner118c530bd6ae688d.jpg'},
+        details:[
             {
                 name: "Beginner 3 DAYS WORKOUT",
                 training_level: "Beginner",
-                image: {url:'https://s3.gifyu.com/images/Beginner118c530bd6ae688d.jpg'},
+                image: {uri :'https://s3.gifyu.com/images/Beginner118c530bd6ae688d.jpg'},
                 meal_plan: 
                 {
                    key: 2, 
@@ -124,6 +126,8 @@ export const workout = [
                                
                 ]
             },
+        ],
+        data :[
             {
                 name: "DAY 1",
                 image: null,
@@ -237,12 +241,12 @@ export const workout = [
     },
     {
         type: "BEGINNER 12 WEEKS WORKOUT",
-        image: {url:'https://s3.gifyu.com/images/Beginner118c530bd6ae688d.jpg'},
-        data = [
+        image: {uri :'https://s3.gifyu.com/images/Beginner118c530bd6ae688d.jpg'},
+        details:[
             {
                 name: "BEGINNER 12 WEEKS WORKOUT",
                 training_level: "Beginner",
-                image: {url:'https://s3.gifyu.com/images/Beginner118c530bd6ae688d.jpg'},
+                image: {uri :'https://s3.gifyu.com/images/Beginner118c530bd6ae688d.jpg'},
                 meal_plan: 
                 {
                    key: 2, 
@@ -263,6 +267,8 @@ export const workout = [
                            "•	Choose exercise alternates on occasion to work the muscles a little differently",
                 ]
             },
+        ],
+        data :[
             {
                 name: "WEEK 1 AND 3, 4 AND 6",
                 image: null,
@@ -425,12 +431,12 @@ export const workout = [
     },
     {
         type: "MUSCLE BUILDING 10 WEEK PROGRAM",
-        image: {url:'https://s3.gifyu.com/images/MuscleBuildingefd0859e48d1fc84.jpg'},
-        data = [
+        image: {uri :'https://s3.gifyu.com/images/MuscleBuildingefd0859e48d1fc84.jpg'},
+        details:[
             {
                 name: "MUSCLE BUILDING 10 WEEK PROGRAM",
                 training_level: "Strenght and Advance",
-                image: {url:'https://s3.gifyu.com/images/MuscleBuildingefd0859e48d1fc84.jpg'},
+                image: {uri :'https://s3.gifyu.com/images/MuscleBuildingefd0859e48d1fc84.jpg'},
                 meal_plan: 
                 {
                    key: 3, 
@@ -443,6 +449,9 @@ export const workout = [
 
                 ]
             },
+        ],
+        data :[
+          
             {
                 name: "DAY 1",
                 image: null,
@@ -636,12 +645,12 @@ export const workout = [
     ,
     {
         type: "MUSCLE BUILDING 5 DAYS VOLUME",
-        image: {url:'https://s3.gifyu.com/images/MuscleBuildingefd0859e48d1fc84.jpg'},
-        data = [
+        image: {uri :'https://s3.gifyu.com/images/MuscleBuildingefd0859e48d1fc84.jpg'},
+        details:[
             {
                 name: "MUSCLE BUILDING 5 DAYS VOLUME",
                 training_level: "Strenght and Advance",
-                image: {url:'https://s3.gifyu.com/images/MuscleBuildingefd0859e48d1fc84.jpg'},
+                image: {uri :'https://s3.gifyu.com/images/MuscleBuildingefd0859e48d1fc84.jpg'},
                 meal_plan: 
                 {
                    key: 3, 
@@ -664,6 +673,9 @@ export const workout = [
 
                 ]
             },
+        ],
+        data :[
+          
             {
                 name: "5 DAYS VOLUME",
                 image: null,
@@ -831,12 +843,12 @@ export const workout = [
     },
     {
         type: "BURN FAT 5 DAYS WORKOUT",
-        image: {url:'https://s3.gifyu.com/images/BurnFats4dcfbffe2df31d61.jpg'},
-        data = [
+        image: {uri :'https://s3.gifyu.com/images/BurnFats4dcfbffe2df31d61.jpg'},
+        details:[
             {
                 name: "BURN FAT 5 DAYS WORKOUT",
                 training_level: "Intense",
-                image: {url:'https://s3.gifyu.com/images/BurnFats4dcfbffe2df31d61.jpg'},
+                image: {uri :'https://s3.gifyu.com/images/BurnFats4dcfbffe2df31d61.jpg'},
                 meal_plan: 
                 {
                    key: 1, 
@@ -860,6 +872,9 @@ export const workout = [
 
                 ]
             },
+        ],
+        data :[
+          
             {
                 name: "DAY1",
                 image: null,
@@ -1060,11 +1075,11 @@ export const workout = [
     },
     {
         type: "BURN FAT 6 DAYS WORKOUT",
-        image: {url:'https://s3.gifyu.com/images/BurnFats4dcfbffe2df31d61.jpg'},
-        data = [
+        image: {uri :'https://s3.gifyu.com/images/BurnFats4dcfbffe2df31d61.jpg'},
+        details:[
             {
                 name: "BURN FAT 6 DAYS WORKOUT",
-                image: {url:'https://s3.gifyu.com/images/BurnFats4dcfbffe2df31d61.jpg'},
+                image: {uri :'https://s3.gifyu.com/images/BurnFats4dcfbffe2df31d61.jpg'},
                 training_level: "Intense",
                 meal_plan: 
                 {
@@ -1079,6 +1094,9 @@ export const workout = [
 
                 ]
             },
+        ],
+        data :[
+         
             {
                 name: "DAY1",
                 image: null,

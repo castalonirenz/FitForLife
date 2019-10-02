@@ -11,7 +11,7 @@ const combineReducer = combineReducers({
 })
 
 const persistConfig = {
-    key: 'root',
+    key: 'gym',
     storage: storage,
     version: 0,
     stateReconciler: autoMergeLevel2 // see "Merge Process" section for details.

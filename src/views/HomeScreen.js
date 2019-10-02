@@ -5,6 +5,7 @@ import { HeaderComponent, Data } from '../components/index'
 import { Theme } from '../themes/Theme';
 import { connect } from "react-redux";
 import { exercise, nutrition } from "../utils/data";
+import { workout } from "../utils/workout";
 const { width } = Dimensions.get('screen')
 class HomeScreen extends Component {
   constructor(props) {
@@ -17,11 +18,12 @@ class HomeScreen extends Component {
   }
 
   componentDidMount(){
-    console.log(this.props.Credentials)
+    
   }
 
   _selectedData = (header, data) => {
     // 
+   
     this.props.navigation.navigate('Data', {
       list: data,
       header: header
@@ -42,44 +44,23 @@ class HomeScreen extends Component {
           showsVerticalScrollIndicator={false}
         >
           <View style={{ flex: 1 , width: "100%", marginTop: 20}}>
-            <View style={{ marginLeft: 20 }}>
-              <Text style={Theme.HeaderText}>Exercise</Text>
-            </View>
+           
             <ScrollView
               snapToInterval={width}
               decelerationRate="fast"
               snapToAlignment={'center'}
               showsHorizontalScrollIndicator={false}
-              horizontal={true}>
+              horizontal={false}>
 
               <View style={{ padding: 20, paddingTop: 0}}>
                 <Data
-                  parentStyle={{ flexDirection: 'row', backgrondColor: "red" }}
-                  data={exercise}
+                  parentStyle={{  backgrondColor: "red" }}
+                  data={workout}
                   itemSelected={this._selectedData.bind(this,'exercise')} />
            </View>
 
             </ScrollView>
-          <View style={{marginLeft: 20}}>
-              <Text style={Theme.HeaderText}>Nutrition</Text>
-          </View>
-            <ScrollView
-              snapToInterval={width}
-              decelerationRate="fast"
-              snapToAlignment={'center'}
-              showsHorizontalScrollIndicator={false}
-              horizontal={true}>
-
-              <View style={{ padding: 20, paddingTop: 0 }}>
-             
-                <Data
-                  parentStyle={{ flexDirection: 'row', backgrondColor: "red" }}
-                  data={nutrition}
-                  itemSelected={this._selectedData.bind(this,'nutrition')} />
-              </View>
-
-            </ScrollView>
-
+  
           </View>
 
         </ScrollView>

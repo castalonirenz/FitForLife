@@ -9,20 +9,28 @@ class Diet extends Component {
         super(props);
         this.state = {
             key: 0,
-            list: []
+            list: [],
+            nutrition: []
         };
     }
 
     async componentDidMount() {
         const { navigation } = this.props
         const key = navigation.getParam('key', null)
-        let a = nutrition.findIndex(x => x.key === key)
-        let final = nutrition.splice(a, 1)
-        this.setState({ key: key, list: final })
+        this.setState({ key: key, nutrition: nutrition })
+        this._segregate(nutrition, key)
     }
 
+    _segregate = (data, key) => {
+        let original = [...data]
+        let a = original.findIndex(x => x.key === key)
+        let final = original.splice(a, 1)
+        this.setState({list: final})
+    }
+
+
+
     render() {
-        
         return (
             <SafeAreaView style={{ flex: 1 }}>
                 <HeaderComponent

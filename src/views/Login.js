@@ -24,8 +24,8 @@ class Login extends Component {
   }
 
   initialValues = {
-    username: "Anjo",
-    password: "anjo"
+    username: "",
+    password: ""
   };
 
 
@@ -35,7 +35,7 @@ class Login extends Component {
     this.setState({ loadingIndicator: true })
     this.props.onLogin(values)
       .then(response => {
-        console.log(response)
+        
         if (response === "success") {
           this.props.navigation.navigate('LoginSuccess')
           this.setState({ loadingIndicator: false })
@@ -106,7 +106,7 @@ class Login extends Component {
         confirm_password: this.state.confirm
       })
         .then((response => {
-          console.log(response)
+          
           if (response.data.success) {
          
             Alert.alert(
@@ -125,16 +125,16 @@ class Login extends Component {
             );
           }
           else if(response.data.success === false)
-            // console.log(response.data.message)
+            // 
             alert(response.data.message)
         }))
         .catch(err => {
-          console.log(err)
+          
         })
   }
   }
   render() {
-    console.log(this.props.credentials)
+    
     let logo
     let connectionStatus
     let loadingIndicator

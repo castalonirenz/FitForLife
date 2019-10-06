@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import { View, Text, SafeAreaView, ScrollView, TouchableOpacity, Image, Dimensions } from 'react-native';
+import { View, Text, SafeAreaView, ScrollView, TouchableOpacity, Image, Dimensions, ImageBackground } from 'react-native';
 import firebase from 'react-native-firebase';
 import { HeaderComponent, Data } from '../components/index'
 import { Theme } from '../themes/Theme';
 import { connect } from "react-redux";
 import { exercise, nutrition } from "../utils/data";
 import { workout } from "../utils/workout";
-const { width } = Dimensions.get('screen')
+import { menuSelection } from "../utils/menu";
+const { width, height } = Dimensions.get('screen')
 class HomeScreen extends Component {
   constructor(props) {
     super(props);
@@ -34,6 +35,13 @@ class HomeScreen extends Component {
     
   }
 
+  _navigate = (screen) => {
+    
+    this.props.navigation.navigate(screen,{
+      screen: 'menu'
+    })
+  }
+
   render() {
     return (
       <SafeAreaView style={{ flex: 1 ,width:"100%"}}>
@@ -53,10 +61,23 @@ class HomeScreen extends Component {
               horizontal={false}>
 
               <View style={{ padding: 20, paddingTop: 0}}>
-                <Data
+                {menuSelection.map((items, key) => (
+                  <TouchableOpacity
+                    onPress={this._navigate.bind(null, items.location)}
+                    style={{ alignItems:"center", justifyContent:"center"}}
+                    key={key}>
+                    <ImageBackground
+                        style={{width: width, height: height /4, alignItems:"center", justifyContent:"center"}}
+                        source={items.image}
+                        >
+                      <Text style={[Theme.NormalText, { color: "#fff", fontSize: height / 20 }]}>{items.text}</Text>
+                    </ImageBackground>
+                  </TouchableOpacity>
+                ))}
+                {/* <Data
                   parentStyle={{  backgrondColor: "red" }}
                   data={workout}
-                  itemSelected={this._selectedData.bind(this,'exercise')} />
+                  itemSelected={this._selectedData.bind(this,'exercise')} /> */}
            </View>
 
             </ScrollView>

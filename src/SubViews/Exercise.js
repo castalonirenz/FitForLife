@@ -17,24 +17,41 @@ class Exercise extends Component {
         let tempArr = []
         const { navigation } = this.props
         const key = navigation.getParam('key', null)
-     //   let a = exercise.findIndex(x => x.key === key)
+        const screen = navigation.getParam('screen', null)
+        if(screen === "menu"){
+            // this.setState({list: exercise})
             exercise.map((i, k) => {
-              
+
                 i.data.map((data, i) => {
+
+        
+                        tempArr.push(data)
                     
-                    if(data.key === key){
+                })
+            })
+            this.setState({ list: tempArr })
+        
+        }
+     //   let a = exercise.findIndex(x => x.key === key)
+       else{
+            exercise.map((i, k) => {
+
+                i.data.map((data, i) => {
+
+                    if (data.key === key) {
                         tempArr.push(data)
                     }
                 })
             })
-            this.setState({list: tempArr})
+            this.setState({ list: tempArr })
+       }
 
         // let final = exercise.splice(a, 1)
         // this.setState({ key: key, list: final })
     }
 
     render() {
-        
+        console.log(this.state.list)
         return (
             <SafeAreaView style={{ flex: 1 }}>
                 <HeaderComponent
@@ -52,7 +69,7 @@ class Exercise extends Component {
                         {this.state.list.map((items, key) => (
                             
                             <View
-                                style={{width:"100%",  alignItems:"center"}} 
+                                style={{width:"100%",  alignItems:"center", marginTop: key > 0 ? 20 : 0}} 
                                 key={key}>
                                 <Image
                                     resizeMode="stretch"

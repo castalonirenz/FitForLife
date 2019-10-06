@@ -51,7 +51,7 @@ class HomeScreen extends Component {
         <ScrollView
           showsVerticalScrollIndicator={false}
         >
-          <View style={{ flex: 1 , width: "100%", marginTop: 20}}>
+          <View style={{ flex: 1 , width: "100%"}}>
            
             <ScrollView
               snapToInterval={width}
@@ -67,7 +67,7 @@ class HomeScreen extends Component {
                     style={{ alignItems:"center", justifyContent:"center"}}
                     key={key}>
                     <ImageBackground
-                        style={{width: width, height: height /4, alignItems:"center", justifyContent:"center"}}
+                        style={{width: width, height: height /3.8, alignItems:"center", justifyContent:"center", backgroundColor:"#c5c5c5"}}
                         source={items.image}
                         >
                       <Text style={[Theme.NormalText, { color: "#fff", fontSize: height / 20 }]}>{items.text}</Text>

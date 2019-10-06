@@ -8,6 +8,7 @@ import DietScreen from '../SubViews/Diet'
 import ExerciseScreen from '../SubViews/Exercise'
 import WorkoutScreen from '../views/Workout'
 import NutritonScreen from '../views/Diet'
+import SpecificExerciseScreen from '../SubViews/SpecificExercise'
 import { TabNavContainer } from "./TabNavigator";
 
 const StackNav = createStackNavigator({
@@ -22,6 +23,9 @@ const StackNav = createStackNavigator({
     },
     Exercise:{
         screen: ExerciseScreen
+    },
+    SpecificExercise:{
+        screen: SpecificExerciseScreen
     },
     Preview:{
         screen: PreviewScreen

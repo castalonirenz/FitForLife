@@ -19,12 +19,13 @@ class SelectedExercise extends Component {
         const { navigation } = this.props
         const header = navigation.getParam('header', null)
         const dataList = navigation.getParam('list', [])
-        if (header === "exercise") {
-            tempArr = this.props.ExerciseList
-        }
-        else if (header === "nutrition") {
-            tempArr = this.props.NutritionList
-        }
+        console.log(dataList, "--> value?")
+        // if (header === "exercise") {
+        //     tempArr = this.props.ExerciseList
+        // }
+        // else if (header === "nutrition") {
+        //     tempArr = this.props.NutritionList
+        // }
 
         this.setState({ dataList: dataList, header: header })
 

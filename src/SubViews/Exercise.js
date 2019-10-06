@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, SafeAreaView, ScrollView, Image, Dimensions } from 'react-native';
-import { HeaderComponent } from "../components/index";
+import { HeaderComponent, Data } from "../components/index";
 import { exercise } from "../utils/exercise";
 import { Theme } from '../themes/Theme';
 const { width, height } = Dimensions.get("screen")
@@ -50,8 +50,52 @@ class Exercise extends Component {
         // this.setState({ key: key, list: final })
     }
 
+    _selectedData = (header, data) => {
+        // 
+
+        this.props.navigation.navigate('SpecificExercise', {
+            list: data,
+            header: header
+        })
+    }
+
     render() {
-        console.log(this.state.list)
+        const { navigation } = this.props
+        const screen = navigation.getParam('screen', null)
+        let display
+            if(screen === "menu"){
+                display = 
+                    <Data
+                        parentStyle={{ backgrondColor: "red" }}
+                        data={exercise}
+                        itemSelected={this._selectedData.bind(this, 'exercise')} />
+            }
+            else{
+                display =
+                     this.state.list.map((items, key) => (
+                            
+                            <View
+                                style={{width:"100%",  alignItems:"center", marginTop: key > 0 ? 20 : 0}} 
+                                key={key}>
+                                <Image
+                                    resizeMode="stretch"
+                                    style={{ width: width * .78, height: height / 3, backgroundColor:"#c5c5c5", borderRadius: 10 }}
+                                    source={items.image} />
+
+                                <View style={[Theme.shadow,{  width:"80%", alignItems:"center", padding: 10, marginTop: 20, borderRadius: 10}]}>
+                                    <Text style={[Theme.HeaderText]}>{items.name}</Text>
+                                    {items.procedure.map((data, k) => (
+                                        
+                                            <Text style={[Theme.NormalText, {marginTop: 10}]}>{data}</Text>
+                                      
+                                    ))}
+                                </View> 
+                            </View>
+                        ))
+
+            }
+
+
         return (
             <SafeAreaView style={{ flex: 1 }}>
                 <HeaderComponent
@@ -66,25 +110,7 @@ class Exercise extends Component {
                     style={{ width: "100%",  }}>
 
                     <View style={{ flex: 1, width: "100%", alignItems: "center", marginBottom: 20, marginTop: 10}}>
-                        {this.state.list.map((items, key) => (
-                            
-                            <View
-                                style={{width:"100%",  alignItems:"center", marginTop: key > 0 ? 20 : 0}} 
-                                key={key}>
-                                <Image
-                                    resizeMode="stretch"
-                                    style={{ width: width * .78, height: height / 3, backgroundColor:"#c5c5c5", borderRadius: 10 }}
-                                    source={items.image} />
-
-                                <View style={[Theme.shadow,{  width:"80%", alignItems:"center", padding: 10, marginTop: 20, borderRadius: 10}]}>
-                                    {items.procedure.map((data, k) => (
-                                        
-                                            <Text style={[Theme.NormalText, {marginTop: 10}]}>{data}</Text>
-                                      
-                                    ))}
-                                </View> 
-                            </View>
-                        ))}
+                        {display}
 
                     </View>
                 </ScrollView>

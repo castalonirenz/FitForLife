@@ -20,13 +20,24 @@ export const Auth = (credentials) => {
                 let todayYear = moment().format('YYYY')
                 let todayDay = moment().format('DD')
                 let todayMonth = moment().format('MM')
-                var a = moment([todayYear, todayMonth,todayDay])
-                var b = moment([expDateYear, expDateMonth,expDateDay])
-                var c = moment(['2019', "09", "18"])
-                // console.log(a.diff(c, 'years', true))
+                let expTime = moment(expDate).format('hh:mm:ss a')
+                let todayTime = moment().format('hh:mm:ss a')
+                var a = moment([todayYear, todayMonth,todayDay, todayTime])
+                var b = moment([expDateYear, expDateMonth,expDateDay, expTime])
+                // var a = moment(expDate).format('LLLL')
+                // var b = moment().format('LLLL')
+                var c = moment().format('MM/DD/YYYY hh:mm:ss A')
+                console.log(a)
+                console.log(moment().format('MM/DD/YYYY hh:mm:ss A'))
+                console.log(a.diff(b, 'minutes', true), "----> asan to")
+                // console.log(moment.utc(moment(expTime, "DD/MM/YYYY HH:mm:ss").diff(moment(todayTime, "DD/MM/YYYY HH:mm:ss"))))
+             
                 let firstTime = response.data.data.first_time !== undefined ? response.data.data.first_time : 1
-                let diff = b.diff(a, 'years', true)
-                if(  diff <= 0){
+                let diff = a.diff(b, 'minutes')
+                console.log(diff, "--diff first")
+                let add = diff + 2
+                console.log(add)
+                if(  add == 3){
                   
                     return 'expired'
                 }

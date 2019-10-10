@@ -24,8 +24,8 @@ class Login extends Component {
   }
 
   initialValues = {
-    username: "Anjo",
-    password: "anjo"
+    username: "Jayson",
+    password: "1234"
   };
 
 

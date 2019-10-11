@@ -27,17 +27,15 @@ export const Auth = (credentials) => {
                 // var a = moment(expDate).format('LLLL')
                 // var b = moment().format('LLLL')
                 var c = moment().format('MM/DD/YYYY hh:mm:ss A')
-                console.log(a)
-                console.log(moment().format('MM/DD/YYYY hh:mm:ss A'))
-                console.log(a.diff(b, 'minutes', true), "----> asan to")
                 // console.log(moment.utc(moment(expTime, "DD/MM/YYYY HH:mm:ss").diff(moment(todayTime, "DD/MM/YYYY HH:mm:ss"))))
              
                 let firstTime = response.data.data.first_time !== undefined ? response.data.data.first_time : 1
                 let diff = a.diff(b, 'minutes')
-                console.log(diff, "--diff first")
-                let add = diff + 2
-                console.log(add)
-                if(  add == 3){
+               
+          
+                let add = diff
+                let minutes = moment.duration(add, 'minutes')
+                if(  minutes >= 180000){
                   
                     return 'expired'
                 }

@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
-import { View, Text, SafeAreaView, ScrollView, Dimensions, Alert } from 'react-native';
+import { View, Text, SafeAreaView, ScrollView, Dimensions, Aler, RefreshControl } from 'react-native';
 import { Data, HeaderComponent } from "../components/index";
 import { Theme } from "../themes/Theme";
 import { connect } from 'react-redux'
 import { logout } from "../redux/actions/Auth";
 const { width } = Dimensions.get('screen')
+import { getLogs } from "../redux/actions/getLogs";
 let displayLogs
 class Profile extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            refreshing: false
         };
     }
 
@@ -40,8 +42,15 @@ class Profile extends Component {
         );
     }
 
+    pullRefresh = () => {
+        this.setState({refreshing: true})
+        this.props.getLogs(this.props.credentials.cust_id)
+        .then(response => this.setState({refreshing: response}))
+
+    }
+
     render() {
-       
+       console.log(this.props.credentials)
         if (this.props.logs.length !== 0) {
             displayLogs =
                 this.props.logs.map((i, k) => (
@@ -69,6 +78,12 @@ class Profile extends Component {
                     iconPress={this._logOut}
                 />
                 <ScrollView
+                    refreshControl={
+                        <RefreshControl
+                            refreshing={this.state.refreshing}
+                            onRefresh={this.pullRefresh}
+                            />
+                    }
                     showsVerticalScrollIndicator={false}
                     contentContainerStyle={{flexGrow: 1}}
                 >
@@ -113,7 +128,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        onLogout: () => dispatch(logout())
+        onLogout: () => dispatch(logout()),
+        getLogs: (id) => dispatch(getLogs(id))
     }
 }
 

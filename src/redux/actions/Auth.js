@@ -11,6 +11,7 @@ export const Auth = (credentials) => {
         })
         .then((response => {
             if(response.data.status !== "Invalid Credentials"){
+                console.log(response.data, "--> checking]")
                 let expDate = response.data.data.cust_expdate
               
                 let firstTime = response.data.data.first_time !== undefined ? response.data.data.first_time : 1
